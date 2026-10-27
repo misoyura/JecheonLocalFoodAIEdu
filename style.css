@@ -322,3 +322,9 @@ footer strong{color:var(--text)}
 .instructor-books{display:block;width:100%;max-width:620px;height:auto}
 @media (max-width:760px){.instructor-card{grid-template-columns:1fr;padding:22px}.instructor-photo{width:140px;height:140px}.instructor-body .table td:first-child{white-space:normal}}
 .org-logos img{display:block;height:48px;width:auto;max-width:100%;object-fit:contain}
+
+/* 제천로컬푸드 로고 */
+.brand-logo{display:block;line-height:0}
+.brandbar .logo-jecheon{height:48px;max-width:100%}
+.page-session .brandbar .logo-jecheon{height:38px}
+@media (max-width:640px){.brandbar .logo-jecheon{height:32px}.page-session .brandbar .logo-jecheon{height:28px}}
