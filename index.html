@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>제천로컬푸드 AI 실무교육</title>
+<meta name="description" content="제천로컬푸드협동조합 · ChatGPT로 끝내는 조합 행정·사무 업무 혁신 — 실습 프롬프트와 실습 파일 자료실 (강사 김유라)">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-index">
+
+<div class="brandbar">
+  <div class="wrap">
+    <a class="brand-text" href="index.html">
+      <span class="brand-mark">제</span>
+      <span class="brand-name"><b>제천로컬푸드협동조합</b><small>JECHEON LOCAL FOOD COOPERATIVE</small></span>
+    </a>
+    <img src="images/logo-kiea.png" alt="한국강사교육협회 KOREA INSTRUCTOR EDUCATION ASSOCIATION">
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">제천로컬푸드협동조합 · 직원 생성형 AI 실무교육</span>
+    <h1>ChatGPT로 끝내는<br><em>조합 행정·사무</em><br>업무 혁신</h1>
+    <p class="sub">3시간 · 노트북 실습 — 6개 미션으로 업무비서·판매데이터 분석·이사회 보고·홍보영상·미니 앱을 직접 만듭니다. 필요한 프롬프트는 <b>복사</b> 버튼 한 번, 실습 파일은 <b>다운로드</b> 한 번이면 됩니다.</p>
+    <div class="chips">
+      <span class="chip instructor">강사 <b>김유라</b></span>
+      <span class="chip">한국강사교육협회 · 제천로컬푸드협동조합</span>
+      <span class="chip">ChatGPT · Gemini canvas · Google Flow</span>
+    </div>
+    <div class="hero-stats">
+      <div><strong>6</strong><span>실습 미션</span></div>
+      <div><strong id="total-prompts">60</strong><span>실습 프롬프트</span></div>
+      <div><strong id="total-files">18</strong><span>내려받는 실습 파일</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="sec" id="parts">
+      <div class="part-grid" id="part-grid"></div>
+    </section>
+
+    <section class="sec" id="today">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow-s">Today's Missions</span>
+          <h2>오늘 직접 완성하는 결과물</h2>
+        </div>
+        <p>3시간 동안 6개 미션으로 아래 결과물을 내 노트북에 남깁니다.</p>
+      </div>
+      <div class="mission-grid">
+        <a class="mission" href="session_4.html#m1">
+          <div class="m-top"><span class="m-no">M1</span><span class="m-time">25분</span></div>
+          <b>프로젝트 업무비서</b>
+          <span>조합 지침·파일을 기억하는 AI 비서 · 양식으로 출하 안내, 메모로 회의록·할 일표</span>
+        </a>
+        <a class="mission" href="session_4.html#m2">
+          <div class="m-top"><span class="m-no">M2</span><span class="m-time">35분</span></div>
+          <b>판매데이터 분석</b>
+          <span>80행 데이터 정제·분석·그래프 2개 · 농가별 정산 문자 일괄 생성</span>
+        </a>
+        <a class="mission" href="session_5.html#m3">
+          <div class="m-top"><span class="m-no">M3</span><span class="m-time">20분</span></div>
+          <b>Work 보고 자료</b>
+          <span>Work로 완성하는 이사회 보고 3장</span>
+        </a>
+        <a class="mission" href="session_5.html#m4">
+          <div class="m-top"><span class="m-no">M4</span><span class="m-time">10분</span></div>
+          <b>심층 리서치 보고서</b>
+          <span>출처가 포함된 혁신사례 조사</span>
+        </a>
+        <a class="mission" href="session_6.html#m5-box">
+          <div class="m-top"><span class="m-no">M5</span><span class="m-time">20분</span></div>
+          <b>홍보영상</b>
+          <span>4컷 이미지 + Flow 에이전트</span>
+        </a>
+        <a class="mission" href="session_6.html#m6">
+          <div class="m-top"><span class="m-no">M6</span><span class="m-time">15분</span></div>
+          <b>바이브코딩 미니 앱</b>
+          <span>점심 메뉴 앱 + 고객응대 훈련 앱</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="sec" id="files">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow-s">Practice Files</span>
+          <h2>실습 파일 다운로드</h2>
+        </div>
+        <p>강의 시작 전에 내려받아 두세요. 모든 조합·농가·매출 정보는 교육용 가상 자료입니다.</p>
+      </div>
+      <div id="zip-all-index"></div>
+      <div class="file-sets" id="practice-files-index"></div>
+    </section>
+
+    <section class="sec" id="ready">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow-s">Before Class</span>
+          <h2>실습 준비 체크 — 계정 · 앱 · 파일</h2>
+        </div>
+        <p>시작 전에 4가지를 확인합니다.</p>
+      </div>
+      <div class="inst">
+        <div class="inst-box">
+          <h3>준비물</h3>
+          <p class="role">로그인 문제는 실습 시작 전에 해결합니다. 옆 사람과 서로 확인해 주세요!</p>
+          <ul>
+            <li><span>✓ ChatGPT 로그인</span>chatgpt.com 또는 데스크톱 앱 · 유료 요금제 계정으로 로그인</li>
+            <li><span>✓ 실습 파일 받기</span>위 ‘실습 파일 다운로드’에서 판매데이터(가상)·공문양식·회의록 예시 등</li>
+            <li><span>✓ Google 계정</span>Gemini canvas · Google Flow 실습용 개인 Gmail로 로그인</li>
+            <li><span>✓ 화면 정리</span>브라우저 창 2개 (ChatGPT · 실습 파일) · 다운로드 폴더 위치 확인</li>
+          </ul>
+        </div>
+        <div class="inst-box">
+          <h3>조합 업무 AI 보안 수칙 3가지</h3>
+          <p class="role">편리함보다 먼저 지켜야 할 기본 원칙</p>
+          <ul>
+            <li><span>01 가명으로 바꾸기</span>농가·조합원 실명, 연락처, 계좌번호는 ‘농가A’, ‘010-****’처럼 바꿔 입력</li>
+            <li><span>02 필요한 부분만</span>계약서·내부 금액자료 원본 대신, 분석에 필요한 열·항목만 남겨 업로드</li>
+            <li><span>03 원본과 대조</span>AI가 낸 합계·수치·출처는 반드시 원본으로 한 번 더 확인</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="library">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow-s">Prompt Library</span>
+          <h2>프롬프트 바로 찾기</h2>
+        </div>
+        <p>제목을 누르면 해당 프롬프트로 이동합니다.</p>
+      </div>
+      <div class="lib">
+        <div class="lib-tools">
+          <label class="search"><input id="lib-search" type="search" placeholder="예: 회의록, 정산, 지침, 포스터, 꾸러미" aria-label="프롬프트 검색"></label>
+          <div class="filters" id="lib-filters"></div>
+        </div>
+        <div id="lib-list"></div>
+      </div>
+    </section>
+
+    <section class="sec" id="guide">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow-s">How to use</span>
+          <h2>이렇게 사용하세요</h2>
+        </div>
+      </div>
+      <div class="inst">
+        <div class="inst-box">
+          <ul>
+            <li><span>01</span>PART·미션 카드 또는 위 목록에서 필요한 프롬프트를 고릅니다.</li>
+            <li><span>02</span>주황색 상자의 <b>복사</b> 버튼을 눌러 ChatGPT·Gemini에 붙여넣습니다.</li>
+            <li><span>03</span>[ ] 안의 내용은 내 업무 상황에 맞게 바꿔 씁니다.</li>
+            <li><span>04</span>강의 페이지 상단 <b>프롬프트만 보기</b>로 프롬프트만 모아 볼 수 있습니다.</li>
+          </ul>
+        </div>
+        <div class="inst-box">
+          <h3>안전하게 AI 활용하기</h3>
+          <p class="role">AI가 초안을 쓰고, 사람이 검증한다</p>
+          <ul>
+            <li><span>개인정보</span>실명 · 연락처 · 계좌는 넣지 않거나 가명 처리</li>
+            <li><span>사실 확인</span>숫자 · 날짜 · 출처는 원본으로 다시 확인</li>
+            <li><span>저작권·초상권</span>실존 인물 · 타사 로고 · 캐릭터 이미지 생성 주의, 홍보물은 사용 조건 확인</li>
+            <li><span>내부 기준</span>조합의 AI 사용 기준과 보안 규정이 우선</li>
+            <li><span>최종 책임</span>AI 결과물의 책임은 작성자에게 — 사람이 확인하고 승인</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="instructor">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow-s">Introduction</span>
+          <h2>강사 소개</h2>
+        </div>
+        <p>기업 실무 맞춤 생성형 AI 교육 전문 · 누적 출강 1,000회 이상</p>
+      </div>
+      <div class="instructor-card">
+        <img class="instructor-photo" src="images/instructor.jpg" alt="김유라 강사">
+        <div class="instructor-body">
+          <h3>김유라 <small>강사</small></h3>
+          <ul class="instructor-titles">
+            <li>한국강사교육협회 협회원</li>
+            <li>미래교육아카데미 전임강사</li>
+            <li>배움더하기 협동조합 이사</li>
+            <li>신구대학교 특강강사</li>
+          </ul>
+          <div class="table-wrap"><table class="table">
+            <tbody>
+              <tr><td>기업·대학</td><td>삼성생명 · 삼성증권 · 삼성카드 — 삼성 금융계열사 출강<br>SK하이닉스 · 아모레퍼시픽 · SPC · KBS미디어 · 앰코테크놀로지코리아 · LH · KOTRA 등 기업<br>중앙대 · 건국대 · 단국대 · 인하대 · 경상국립대 · 국립경찰대 · 성신여대 · 한국항공대 등 40여 개 대학</td></tr>
+              <tr><td>정부·공공기관</td><td>기후에너지환경부(장·차관 간부진) · 보건복지부(간부진 AI 특강) · 산업통상부(AX 리더십) · 국세청 · 소방청 · 기획재정부 · 국민연금공단 · 국민건강보험공단 · 한국수자원공사 · 국가공무원인재개발원 외 다수</td></tr>
+              <tr><td>국회·지방의회</td><td>국회의원회관 · 경기·경남·충남·충북도의회 · 인천·울산·대구광역시의회 · 행안부 지방의정연수센터 등 다수</td></tr>
+            </tbody>
+          </table></div>
+          <p class="instructor-books-label">저서</p>
+          <img class="instructor-books" src="images/instructor-books.jpg" alt="저서 표지 7권">
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="contact">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow-s">Organized by</span>
+          <h2>교육 주관</h2>
+        </div>
+      </div>
+      <div class="inst">
+        <div class="inst-box org-logos">
+          <span class="brand-text">
+            <span class="brand-mark">제</span>
+            <span class="brand-name"><b>제천로컬푸드협동조합</b><small>직매장 3곳 · 온라인몰 · 꾸러미</small></span>
+          </span>
+          <img src="images/logo-kiea.png" alt="한국강사교육협회">
+        </div>
+        <div class="inst-box">
+          <div class="contact">
+            <div><span class="k">과정</span>ChatGPT로 끝내는 조합 행정·사무 업무 혁신 (3시간 · 노트북 실습)</div>
+            <div><span class="k">강사</span>김유라 · 한국강사교육협회</div>
+            <div><span class="k">CAFE</span>네이버 카페 ‘한국강사교육협회’ — 더 많은 AI 소식과 교육을 만나보세요.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+<div id="toast">복사되었습니다 ✓</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>initIndexPage();</script>
+</body>
+</html>

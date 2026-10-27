@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>미션 5·6 · 홍보영상 · 바이브코딩 미니 앱 · 제천로컬푸드 AI 실무교육</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-session">
+
+<div class="brandbar">
+  <div class="wrap">
+    <a class="brand-text" href="index.html">
+      <span class="brand-mark">제</span>
+      <span class="brand-name"><b>제천로컬푸드협동조합</b><small>JECHEON LOCAL FOOD COOPERATIVE</small></span>
+    </a>
+    <img src="images/logo-kiea.png" alt="한국강사교육협회">
+  </div>
+</div>
+
+<header class="header">
+  <div class="wrap">
+    <a class="home" href="index.html">← ChatGPT로 끝내는 조합 행정·사무 업무 혁신</a>
+    <p class="eyebrow">미션 5·6 · 이미지 · Flow · Gemini canvas</p>
+    <h1>홍보영상 · 바이브코딩 미니 앱</h1>
+    <p class="subtitle">MISSION 5 (20분) 꾸러미 기획 → 사과 포스터 → 4컷 이미지 → Flow 홍보영상, MISSION 6 (15분) 말로 설명해서 작은 업무 앱을 직접 만들어 봅니다.</p>
+  </div>
+</header>
+
+<nav class="nav" id="site-nav"></nav>
+
+<main>
+  <div class="wrap">
+
+    <section class="card" id="m5-box">
+      <h2><span class="num">M5</span>제철 꾸러미 구성안 만들기 <span class="slide-ref">선택</span></h2>
+      <p class="lead">‘제천로컬푸드 업무비서’ 프로젝트에서 새 대화를 열어 진행 · <b>무엇을 팔지 정하는 기획 단계</b> — 다음 단계부터 홍보합니다</p>
+      <div class="tiles">
+        <div class="tile"><b>1~2인 실속 꾸러미</b><span>소포장 · 손질 쉬운 채소 위주</span></div>
+        <div class="tile"><b>4인 가족 꾸러미</b><span>주간 반찬 재료 · 과일 · 채소 · 계란</span></div>
+        <div class="tile"><b>제철 선물 꾸러미</b><span>명절 · 감사 선물 · 대표 과일 · 가공품</span></div>
+      </div>
+      <p class="prompt-note" style="margin-top:-8px">※ 꾸러미 구성은 예시입니다</p>
+      <div class="prompt" id="p6-01" data-label="꾸러미 ① 11월 제철 꾸러미 3종 구성"><pre>11월 제철 농산물로 꾸러미 3종을 구성해줘.
+가격대·구성·추천 대상·안내 문구를 포함하고, 품목은 아래 목록에서만 골라.
+[이번 달 출하 가능 품목] 사과(부사), 배추, 무, 대파, 감자, 쌀(4kg), 유정란, 꿀, 된장</pre></div>
+      <p class="prompt-note">↓ 같은 대화창에서 이어서</p>
+      <div class="prompt short" id="p6-02" data-label="꾸러미 ② 구성안 표로 정리"><pre>구성안을 표로 정리해줘.
+열: 꾸러미 이름·구성 품목·가격대·추천 대상·안내 문구 한 줄</pre></div>
+      <div class="box warn"><span class="box-title">⚠ 확인</span>가격대는 AI가 정한 예시 — 확정 전 담당자 확인</div>
+    </section>
+
+    <section class="card" id="m5-poster">
+      <h2><span class="num">M5</span>제철 사과 홍보 포스터 만들기</h2>
+      <p class="lead">우리 조합 포스터로 직접 만들어 봅니다.</p>
+      <ol class="steps">
+        <li><b>문구 정하기</b><span>제목 · 부제 · 기간 · 장소 정하기</span></li>
+        <li><b>포스터 생성</b><span>A4 세로 · 글자 크게 · 따뜻한 분위기</span></li>
+        <li><b>글자 확인</b><span>틀린 글자 · 숫자만 고쳐 달라고 요청</span></li>
+        <li><b>활용</b><span>매장 POP · SNS · 배너 크기로 바꾸기</span></li>
+      </ol>
+      <div class="prompt" id="p6-03" data-label="‘가을 사과 기획전’ A4 포스터"><pre>제천로컬푸드 직매장의 '가을 사과 기획전' 포스터를 A4 세로로 만들어줘.
+큰 제목은 '갓 딴 제천 사과', 부제는 '10/30(금)~11/1(일) 직매장 3곳'.
+따뜻한 가을 분위기, 글자는 크고 읽기 쉽게. 효능 문구는 넣지 마.</pre></div>
+      <div class="prompt-group">
+        <div class="prompt short" id="p6-04" data-label="포스터 추가 ① 배경을 가을 사과농장으로"><pre>배경을 사과가 열린 가을 사과농장으로 변경하고. 기존 문구와 앞쪽 사과 상자는 유지해줘</pre></div>
+        <div class="prompt short" id="p6-05" data-label="포스터 추가 ② 사과를 든 농부 추가"><pre>사과를 들고 환하게 웃는 농부를 추가해줘</pre></div>
+      </div>
+      <figure class="fig narrow"><img src="images/apple-poster.jpg" alt="‘갓 딴 제천 사과’ 가을 사과 기획전 포스터 결과 예시" loading="lazy"><figcaption>결과 예시</figcaption></figure>
+      <div class="box warn"><span class="box-title">⚠ 주의</span>가격 · 할인율 · 기간은 사람이 확인 · 효능 과장 표현 금지 · 실존 인물 · 다른 회사 로고는 넣지 않기</div>
+    </section>
+
+    <section class="card" id="m5-4cut">
+      <h2><span class="num">M5</span>4컷 이미지로 홍보영상 만들기 — ChatGPT + Flow</h2>
+      <p class="lead">① ChatGPT로 같은 화풍 이미지 4장 → ② Flow 에이전트로 홍보영상 → ③ 확인·수정·다운로드 + SNS 문구(ChatGPT)</p>
+      <ol class="steps">
+        <li><b>ChatGPT · 4컷 이미지</b><span>장면 4개 기획 · 같은 화풍 이미지 4장 · 이미지 내려받기</span></li>
+        <li><b>Flow · 에이전트</b><span>에이전트 켜기 · 이미지 4장을 소재로 홍보영상 요청</span></li>
+        <li><b>마무리</b><span>영상 확인 · 수정 요청 · 다운로드 · SNS 문구 (ChatGPT)</span></li>
+      </ol>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>구분</th><th>확인 내용</th></tr></thead>
+        <tbody>
+          <tr><td>Sora</td><td>2026년 4월 웹·앱 서비스 종료 → ChatGPT 단독으로는 영상 생성 불가</td></tr>
+          <tr><td>Google Flow</td><td>하루 50크레딧 · Lite 10 / Fast 20 크레딧 · 만 18세 이상 · 개인 Gmail 권장</td></tr>
+        </tbody>
+      </table></div>
+      <p class="prompt-note">※ 2026년 10월 확인 자료 기준이며, 크레딧·정책은 바뀔 수 있습니다</p>
+
+      <h3>ChatGPT로 4컷 이미지 만들기</h3>
+      <div class="tiles">
+        <div class="tile"><div class="t-no">컷 1</div><span>아침 햇살 속 제천 과수원의 빨간 사과</span></div>
+        <div class="tile"><div class="t-no">컷 2</div><span>농부가 웃으며 사과를 수확하는 모습</span></div>
+        <div class="tile"><div class="t-no">컷 3</div><span>직매장 진열대에 놓인 사과 상자</span></div>
+        <div class="tile"><div class="t-no">컷 4</div><span>장바구니에 사과를 담는 가족 고객</span></div>
+      </div>
+      <div class="prompt" id="p6-06" data-label="ChatGPT 4컷 이미지 — 제천 가을 사과 홍보"><pre>제천 가을 사과 홍보영상에 쓸 장면 이미지 4장을 만들어줘.
+아래 컷 1~4 순서로 한 장씩, 16:9 가로 비율로.
+컷 1 아침 햇살 속 제천 과수원의 빨간 사과
+컷 2 농부가 웃으며 사과를 수확하는 모습
+컷 3 직매장 진열대에 놓인 사과 상자
+컷 4 장바구니에 사과를 담는 가족 고객
+4장 모두 같은 화풍(따뜻한 실사 느낌)과 같은 농부 인물을 유지하고, 이미지 안에 글자는 넣지 마.</pre></div>
+      <p class="prompt-note">※ 슬라이드의 ‘위의 컷 1~4 순서로’를 복사해서 바로 쓸 수 있도록 컷 설명을 프롬프트 안에 넣었습니다.</p>
+      <div class="fig-grid">
+        <figure class="fig"><img src="images/cut1.jpg" alt="컷 1 — 아침 햇살 속 제천 사과밭" loading="lazy"><figcaption>컷 1 · 아침 햇살 속 사과밭</figcaption></figure>
+        <figure class="fig"><img src="images/cut2.jpg" alt="컷 2 — 미소로 사과를 수확하는 농부" loading="lazy"><figcaption>컷 2 · 수확하는 농부</figcaption></figure>
+        <figure class="fig"><img src="images/cut3.jpg" alt="컷 3 — 농부가 진열하는 가을 사과" loading="lazy"><figcaption>컷 3 · 직매장 진열</figcaption></figure>
+        <figure class="fig"><img src="images/cut4.jpg" alt="컷 4 — 가족과 농부의 따뜻한 사과 장보기" loading="lazy"><figcaption>컷 4 · 가족 장보기</figcaption></figure>
+      </div>
+      <div class="box tip"><span class="box-title">TIP</span>4장의 색감·인물이 같아야 영상이 자연스럽게 이어집니다 · 이미지 속 한글 글자는 깨지기 쉬움 → 자막은 나중에</div>
+    </section>
+
+    <section class="card" id="m5-flow">
+      <h2><span class="num">M5</span>Flow 에이전트로 홍보영상 완성하기</h2>
+      <p class="lead">구글 계정으로 로그인하면 Flow의 메인 홈 → <b>‘+ 새 프로젝트’</b> 버튼으로 새 작업을 시작합니다.</p>
+      <figure class="fig"><img src="images/flow-screen.jpg" alt="Google Flow 실제 화면 — 에이전트 켜기, 미디어 업로드, 프롬프트 입력창" loading="lazy"><figcaption>Google Flow 실제 화면 — ① 에이전트 켜기 ② 미디어 업로드: 이미지 4컷 올리기 ③ 프롬프트: 영상 생성용 프롬프트 입력하기 ④ 프롬프트 입력창</figcaption></figure>
+      <ol class="steps">
+        <li><b>Google Flow 접속</b><span>새 프로젝트 (개인 Gmail)</span></li>
+        <li><b>에이전트 켜기</b><span>프롬프트 상자에서 ‘에이전트’ 켜기</span></li>
+        <li><b>소재 추가</b><span>4컷 이미지를 프롬프트 상자로 끌어 소재로 추가</span></li>
+        <li><b>프롬프트 입력 → 생성</b><span>아래 프롬프트 입력</span></li>
+        <li><b>결과 확인</b><span>수정 요청 → 다운로드</span></li>
+      </ol>
+      <div class="prompt" id="p6-07" data-label="Flow 에이전트 — 4컷으로 홍보영상"><pre>첨부한 4장의 이미지를 1→4 순서로 이어서 제천 사과 홍보영상을 만들어줘.
+장면마다 카메라가 천천히 움직이고, 밝고 따뜻한 분위기의 음악을 넣어줘.</pre></div>
+      <div class="box tip"><span class="box-title">TIP</span>크레딧 절약: Lite 모델로 먼저 시험 · 한 번에 안 이어지면 → 컷마다 8초 영상을 만든 뒤 장면을 이어 붙이기</div>
+      <h3>Flow 홍보영상 결과 예시</h3>
+      <figure class="fig"><video src="images/flow-promo.mp4" controls preload="none" poster="images/flow-result.jpg" playsinline></video><figcaption>Flow 에이전트로 만든 제천 사과 홍보영상 (8MB · 재생 버튼을 눌러 보세요)</figcaption></figure>
+    </section>
+
+    <section class="card" id="m6">
+      <h2><span class="num">M6</span>바이브코딩이란?</h2>
+      <p class="lead">코드를 몰라도 <b>말로 설명하면 AI가 앱을 만들어 주는</b> 방식</p>
+      <ol class="steps">
+        <li><b>말로 설명</b><span>어떤 앱인지 · 원하는 기능 설명</span></li>
+        <li><b>AI가 코드 작성</b><span>Canvas에서 HTML 코드 자동 생성</span></li>
+        <li><b>미리보기 실행</b><span>Canvas 화면에서 바로 실행 · 확인</span></li>
+        <li><b>말로 수정</b><span>‘버튼 크게’ ‘상황 추가’</span></li>
+      </ol>
+      <div class="box note"><span class="box-title">오늘 만들 앱</span>① 오늘 점심 뭐 먹지? ② 신입 직원 고객응대 훈련 앱<br><b>사용 도구</b> Gemini canvas (입력창 아래 ‘Canvas’ 선택) · 코딩 지식은 필요 없음</div>
+      <h3>ChatGPT – 사이트</h3>
+      <p>웹사이트·웹앱·게임을 직접 만들고 호스팅·수정·공유까지 해 주는 <b>“노코드 웹 빌더”</b> 기능입니다. 채팅으로 말하듯이 설명만 하면 사이트가 만들어지고 URL로 공유됩니다.</p>
+    </section>
+
+    <section class="card" id="m6-lunch">
+      <h2><span class="num">M6</span>바이브코딩 맛보기 — 오늘 점심 뭐 먹지?</h2>
+      <p class="lead">Gemini canvas 기능 이용하기 (속도가 빠름)</p>
+      <div class="prompt" id="p6-08" data-label="바이브코딩 맛보기 — ‘오늘 점심 뭐 먹지?’ 웹앱"><pre>다음과 같은 웹앱을 만들어줘.
+사용자가 '오늘의 날씨'와 '오늘의 기분'을 버튼으로 선택하면 다음 내용을 추천하는 웹앱을 만들어줘.
+• 오늘의 점심 메뉴 1개
+• 부서원들과 나눌 수 있는 가벼운 대화 주제 1개
+웹앱 이름은 '오늘 점심 뭐 먹지?'로 작성해줘.
+주요 사용자는 [부서원들과 점심 메뉴를 정하고 자연스럽게 소통하고 싶은 부장님]이다.
+전체 분위기는 [친근하지만 지나치게 가볍지 않은 직장인용 스타일]로 구성하고, 인터넷 브라우저에서 바로 실행할 수 있는 참여형 웹앱으로 만들어줘.</pre></div>
+      <div class="prompt short" id="p6-09" data-label="점심 앱 추가 — 가독성·제천 맛집·음성"><pre>UI를 가독성 있게 변경해줘. 이모티콘은 크게 해줘. 메뉴가 추천되면 제천시 맛집도 추천하고, 음성으로 읽어줘.</pre></div>
+      <div class="box warn"><span class="box-title">⚠ 확인</span>추천된 맛집은 실제 가게인지 확인</div>
+      <figure class="fig narrow"><img src="images/lunch-app.jpg" alt="‘오늘 점심 뭐 먹지?’ 웹앱 결과 화면 — 날씨와 기분 선택 버튼" loading="lazy"><figcaption>결과 예시</figcaption></figure>
+    </section>
+
+    <section class="card" id="m6-train">
+      <h2><span class="num">M6</span>[심화] 신입 고객응대 훈련 앱 (Gemini canvas)</h2>
+      <p class="lead">미션 1에서 만든 <b>클레임 응대 매뉴얼</b>을 함께 붙여넣으면 더 정확해집니다.</p>
+      <div class="tiles">
+        <div class="tile"><div class="t-no">1</div><b>시든 채소 환불</b></div>
+        <div class="tile"><div class="t-no">2</div><b>“마트보다 비싸요”</b></div>
+        <div class="tile"><div class="t-no">3</div><b>품절 항의</b></div>
+        <div class="tile"><div class="t-no">4</div><b>원산지 의심</b></div>
+        <div class="tile"><div class="t-no">5</div><b>꾸러미 배송 지연</b></div>
+        <div class="tile"><div class="t-no">6</div><b>계산 실수</b></div>
+      </div>
+      <p class="prompt-note" style="margin-top:-8px">고객 상황 6가지 (예시) — 우리 매장 상황으로 바꿔도 됩니다</p>
+      <div class="prompt" id="p6-10" data-label="[심화] 신입 고객응대 훈련 앱"><pre>제천로컬푸드 직매장 신입 직원을 위한 '고객응대 훈련 앱'을 만들어줘.
+고객 상황 6개(시든 채소 환불, '마트보다 비싸요', 품절 항의, 원산지 의심, 꾸러미 배송 지연, 계산 실수)마다 응대 선택지 3개(좋음·보통·나쁨)와 이유를 담은 피드백을 넣어줘.
+화면은 시작 → 상황 카드 → 응대 선택·피드백 → 결과(총점·등급·다시하기) 순서로, 글씨는 크게, 버튼은 누르기 쉽게 만들어줘.
+(클레임 응대 매뉴얼이 있으면 아래에 붙여넣기)</pre></div>
+      <div class="box note"><span class="box-title">Gemini에 붙여넣기</span>미션 1 결과를 복사해 두지 않았다면 <a href="files/claim_manual_sample.docx" download="클레임_응대_매뉴얼_예시(가상).docx">클레임_응대_매뉴얼_예시(가상).docx ↓</a> 내용을 붙여넣으세요.</div>
+    </section>
+
+    <section class="card" id="m6-share">
+      <h2><span class="num">M6</span>완성 · 활용하기</h2>
+      <p class="lead">만든 앱은 링크 하나로 동료와 나눕니다.</p>
+      <ol class="steps">
+        <li><b>공유</b><span>Canvas의 공유 버튼으로 링크 만들기</span></li>
+        <li><b>활용</b><span>링크를 사내 메신저로 전달 → 신규 직원 교육에 활용</span></li>
+        <li><b>확장</b><span>아래처럼 말로 계속 고칩니다</span></li>
+      </ol>
+      <div class="prompt-group">
+        <div class="prompt short" id="p6-11" data-label="확장 — 새 상황 3개 추가"><pre>새 상황 3개 추가해줘</pre></div>
+        <div class="prompt short" id="p6-12" data-label="확장 — 점수 기준 바꾸기"><pre>점수 기준 바꿔줘</pre></div>
+      </div>
+      <div class="box warn"><span class="box-title">⚠ 주의</span>앱 속 응대 기준은 담당자가 검토한 뒤 교육에 사용하세요.</div>
+      <div class="box tip"><span class="box-title">TIP</span>같은 방법으로 신규 직원 업무 퀴즈, 상품 지식 퀴즈도 만들 수 있습니다.</div>
+    </section>
+
+    <section class="card" id="bonus">
+      <h2><span class="num">+</span>보너스 실습 · Canva로 판매전 현수막 만들기 <span class="slide-ref">시간 여유 시</span></h2>
+      <p class="lead">ChatGPT 일반 새 대화 → 도구 메뉴에서 <b>Canva</b> 선택 → 아래 프롬프트 입력</p>
+      <div class="prompt" id="p6-13" data-label="보너스 — Canva 판매전 현수막"><pre>Canva로 가로 300cm × 세로 90cm 현수막을 만들어줘.
+· 제목: 2026 가을 제철 농산물 특별 판매전
+· 기간: 11. 12.(목) ~ 11. 20.(금)
+· 장소: 제천로컬푸드 직매장 · 온라인몰
+· 혜택: 전 품목 15% 할인, 5만 원 이상 구매 시 장바구니 증정
+사과·배추가 어울리는 따뜻한 가을 색감으로, 멀리서도 잘 보이게 글씨를 크게 해줘.</pre></div>
+      <figure class="fig"><img src="images/bonus-banner.jpg" alt="Canva로 만든 가을 제철 농산물 특별 판매전 현수막 결과 예시" loading="lazy"><figcaption>결과 예시</figcaption></figure>
+      <a class="link-btn" href="session_7.html">다음 · 마무리 정리 및 적용 →</a>
+    </section>
+
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+<div id="toast">복사되었습니다 ✓</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>initSessionPage(6);</script>
+</body>
+</html>

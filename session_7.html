@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>마무리 · 정리 및 적용 · 제천로컬푸드 AI 실무교육</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-session">
+
+<div class="brandbar">
+  <div class="wrap">
+    <a class="brand-text" href="index.html">
+      <span class="brand-mark">제</span>
+      <span class="brand-name"><b>제천로컬푸드협동조합</b><small>JECHEON LOCAL FOOD COOPERATIVE</small></span>
+    </a>
+    <img src="images/logo-kiea.png" alt="한국강사교육협회">
+  </div>
+</div>
+
+<header class="header">
+  <div class="wrap">
+    <a class="home" href="index.html">← ChatGPT로 끝내는 조합 행정·사무 업무 혁신</a>
+    <p class="eyebrow">마무리 · 정리 · 부록</p>
+    <h1>정리 및 적용</h1>
+    <p class="subtitle">자동화 아이디어 · 내 업무에 맞는 AI 찾기 · 안전한 활용 — 그리고 부록으로 엑셀 수식·피벗 테이블을 직접 해 봅니다.</p>
+  </div>
+</header>
+
+<nav class="nav" id="site-nav"></nav>
+
+<main>
+  <div class="wrap">
+
+    <section class="card" id="auto">
+      <h2><span class="num">01</span>반복 업무 자동화 아이디어</h2>
+      <p class="lead">자동화의 시작 = <b>‘매번 똑같이 하는 일’ 찾기</b></p>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>사례 업무</th><th>지금</th><th>AI 활용 후</th><th>쓸 기능</th></tr></thead>
+        <tbody>
+          <tr><td>농가 정산 문자</td><td>농가마다 따로 작성</td><td>정산표 올리고 10건 한 번에 생성</td><td>데이터 분석</td></tr>
+          <tr><td>월간 판매 보고</td><td>엑셀 집계 후 직접 작성</td><td>파일 올리면 표·그래프·요약 초안</td><td>프로젝트 · 분석</td></tr>
+          <tr><td>회의록</td><td>받아 적고 다시 정리</td><td>메모 → 회의록 · 할 일 · 문자</td><td>프로젝트 지침</td></tr>
+          <tr><td>공지 · 안내문</td><td>매번 새로 작성</td><td>양식 + 대상별 톤 변환</td><td>양식화</td></tr>
+          <tr><td>홍보 콘텐츠</td><td>외주 또는 직접 촬영</td><td>4컷 이미지 → 영상</td><td>이미지 · Flow</td></tr>
+          <tr><td>반복 계산</td><td>계산기 · 수작업</td><td>수식 · 작은 웹 앱</td><td>바이브코딩</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section class="card" id="mywork">
+      <h2><span class="num">02</span>[실습] 우리 업무에 맞는 AI 활용법 찾기</h2>
+      <p class="lead">내 업무 · 빈도 · 걸리는 시간 · AI 활용 방법 · 쓸 기능을 표로 정리합니다.</p>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>내 업무</th><th>빈도</th><th>걸리는 시간</th><th>AI 활용 방법</th><th>쓸 기능</th></tr></thead>
+        <tbody>
+          <tr><td>예) 농가 출하 안내 문자</td><td>매주</td><td>30분</td><td>양식 + 일괄 생성</td><td>프로젝트</td></tr>
+        </tbody>
+      </table></div>
+      <div class="prompt" id="p7-01" data-label="우리 업무에 맞는 AI 활용법 찾기"><pre>나는 [직무]야. 내가 매주 하는 업무 목록을 줄게.
+업무마다 AI 활용 방법, 쓸 기능, 예상 절감 시간을 표로 정리하고, 효과가 가장 큰 3개를 추천해줘.
+[업무 목록]</pre></div>
+      <div class="box tip"><span class="box-title">TIP</span>추천받은 1개를 오늘 바로 프로젝트 지침으로 만들어 보세요.</div>
+    </section>
+
+    <section class="card" id="library">
+      <h2><span class="num">03</span>조합 공용 프롬프트 라이브러리 <span class="slide-ref">선택</span></h2>
+      <p class="lead">오늘 만든 프롬프트를 <b>조합의 자산</b>으로 남기기</p>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>업무</th><th>프롬프트 이름</th><th>언제 쓰나</th><th>관리 담당</th></tr></thead>
+        <tbody>
+          <tr><td>회의록</td><td>회의록_3종세트_v1</td><td>회의 직후</td><td>운영</td></tr>
+          <tr><td>정산 안내</td><td>정산문자_일괄생성_v1</td><td>매월 정산일</td><td>회계</td></tr>
+          <tr><td>판매 분석</td><td>판매분석_월간보고_v1</td><td>매월 초</td><td>운영</td></tr>
+          <tr><td>고객 응대</td><td>클레임응대_매뉴얼_v1</td><td>클레임 발생 시</td><td>매장</td></tr>
+          <tr><td>홍보</td><td>숏폼기획_Flow용_v1</td><td>제철 품목 출하 시</td><td>홍보</td></tr>
+        </tbody>
+      </table></div>
+      <div class="box tip"><span class="box-title">TIP</span>이름 규칙: [업무]_[용도]_v1 · 공유 폴더·시트에 모으기 · 잘 된 프롬프트는 프로젝트 지침으로 승격</div>
+    </section>
+
+    <section class="card" id="safe">
+      <h2><span class="num">04</span>안전하게 AI 활용하기</h2>
+      <p class="lead">AI가 초안을 쓰고, <b>사람이 검증한다</b></p>
+      <div class="tiles">
+        <div class="tile"><div class="t-no">1</div><b>개인정보</b><span>실명 · 연락처 · 계좌는 넣지 않거나 가명 처리</span></div>
+        <div class="tile"><div class="t-no">2</div><b>사실 확인</b><span>숫자 · 날짜 · 출처는 원본으로 다시 확인</span></div>
+        <div class="tile"><div class="t-no">3</div><b>저작권 · 초상권</b><span>실존 인물 · 타사 로고 · 캐릭터 이미지 생성 주의, 홍보물은 사용 조건 확인</span></div>
+        <div class="tile"><div class="t-no">4</div><b>내부 기준</b><span>조합의 AI 사용 기준과 보안 규정이 우선</span></div>
+        <div class="tile"><div class="t-no">5</div><b>최종 책임</b><span>AI 결과물의 책임은 작성자에게 — 사람이 확인하고 승인</span></div>
+      </div>
+    </section>
+
+    <section class="card" id="review">
+      <h2><span class="num">05</span>오늘의 미션 돌아보기</h2>
+      <p class="lead">M1 업무비서 · M2 데이터 분석 · M3 Work 보고 · M4 심층 리서치 · M5 홍보영상 · M6 미니 앱</p>
+      <h3>나의 적용 계획</h3>
+      <div class="box note">
+        <p><b>내 반복 업무 1개:</b> ____________________</p>
+        <p><b>쓸 기능:</b> 프로젝트 · 데이터 분석 · 심층 리서치 · Gemini canvas · Flow</p>
+        <p style="margin:0"><b>프로젝트 지침 1줄:</b> ________________________________________________</p>
+      </div>
+      <div class="box tip"><span class="box-title">AI가 초안을 쓰고, 사람이 검증한다</span>감사합니다. 궁금한 점은 편하게 질문해 주세요.</div>
+    </section>
+
+    <section class="card" id="excel-formula">
+      <h2><span class="num">부록</span>엑셀 수식 받아서 직접 쓰기</h2>
+      <p class="lead">시연 없이 참고용 자료입니다 · 결과만 받지 말고, <b>다음 달에도 쓸 수식</b>을 받습니다.</p>
+      <div class="prompt" id="p7-02" data-label="부록 — 매장별 월 매출 엑셀 수식 받기"><pre>A열 판매일자, B열 매장, H열 매출액이야.
+매장별 월 매출을 구하는 엑셀 수식을 알려주고, 각 부분을 설명해줘.</pre></div>
+      <h3>수식 예시</h3>
+      <div class="box note"><span class="box-title">배론점의 7월 매출 합계</span><code>=SUMIFS(H:H, B:B, "배론점", A:A, "&gt;="&amp;DATE(2026,7,1), A:A, "&lt;"&amp;DATE(2026,8,1))</code></div>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>함수·기능</th><th>용도</th></tr></thead>
+        <tbody>
+          <tr><td>SUMIFS</td><td>조건별 합계 (매장·월별 매출)</td></tr>
+          <tr><td>COUNTIFS</td><td>조건별 건수 (품목별 판매 건수)</td></tr>
+          <tr><td>조건부 서식</td><td>기준보다 낮은 매출 자동 색칠</td></tr>
+        </tbody>
+      </table></div>
+      <div class="box tip"><span class="box-title">TIP</span>‘각 부분을 설명해줘’까지 요청하면 다음 달에는 직접 수정할 수 있습니다.</div>
+    </section>
+
+    <section class="card" id="excel-pivot">
+      <h2><span class="num">부록</span>피벗 테이블로 한 번에 집계하기</h2>
+      <p class="lead">참고용 자료입니다.</p>
+      <ol class="steps">
+        <li><b>표 전체 선택 → 삽입 → 피벗 테이블</b><span></span></li>
+        <li><b>행: 품목</b><span></span></li>
+        <li><b>열: 매장</b><span></span></li>
+        <li><b>값: 매출액(합계) · 필터: 월</b><span></span></li>
+      </ol>
+      <div class="prompt" id="p7-03" data-label="부록 — 피벗 테이블 만드는 순서"><pre>엑셀 피벗 테이블로 매장×품목 매출표를 만드는 순서를 메뉴 이름 기준으로 단계별로 알려줘.
+내 엑셀 버전은 [버전]이야.</pre></div>
+      <h3>완성 화면 예시 (숫자는 예시 · 단위: 천 원)</h3>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>품목</th><th>1호점</th><th>이마트매장</th><th>배론점</th><th>합계</th></tr></thead>
+        <tbody>
+          <tr><td>사과</td><td>2,340</td><td>1,980</td><td>2,610</td><td>6,930</td></tr>
+          <tr><td>상추</td><td>420</td><td>510</td><td>380</td><td>1,310</td></tr>
+          <tr><td>유정란</td><td>1,260</td><td>940</td><td>1,120</td><td>3,320</td></tr>
+          <tr><td>합계</td><td>4,020</td><td>3,430</td><td>4,110</td><td>11,560</td></tr>
+        </tbody>
+      </table></div>
+      <div class="box tip"><span class="box-title">TIP</span>메뉴 위치는 엑셀 버전마다 다르니 내 버전을 함께 알려주세요.</div>
+      <a class="link-btn" href="index.html#files">실습 파일 전체 다시 받기 →</a>
+    </section>
+
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+<div id="toast">복사되었습니다 ✓</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>initSessionPage(7);</script>
+</body>
+</html>

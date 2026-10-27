@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>미션 1·2 · 업무비서 · 판매데이터 분석 · 제천로컬푸드 AI 실무교육</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-session">
+
+<div class="brandbar">
+  <div class="wrap">
+    <a class="brand-text" href="index.html">
+      <span class="brand-mark">제</span>
+      <span class="brand-name"><b>제천로컬푸드협동조합</b><small>JECHEON LOCAL FOOD COOPERATIVE</small></span>
+    </a>
+    <img src="images/logo-kiea.png" alt="한국강사교육협회">
+  </div>
+</div>
+
+<header class="header">
+  <div class="wrap">
+    <a class="home" href="index.html">← ChatGPT로 끝내는 조합 행정·사무 업무 혁신</a>
+    <p class="eyebrow">미션 1·2 · 프로젝트 · 데이터 분석</p>
+    <h1>프로젝트 업무비서 · 판매데이터 분석</h1>
+    <p class="subtitle">MISSION 1 (25분) 조합 지침과 파일을 기억하는 AI 비서를 만들어 회의록 업무에 적용하고, MISSION 2 (35분) 직매장 3곳의 7~9월 판매자료를 정리해 이사회 보고를 준비합니다.</p>
+  </div>
+</header>
+
+<nav class="nav" id="site-nav"></nav>
+
+<main>
+  <div class="wrap">
+
+    <section class="card" id="m1">
+      <h2><span class="num">M1</span>프로젝트 업무비서 만들기</h2>
+      <p class="lead">오늘 모든 미션은 <b>‘제천로컬푸드 업무비서’ 프로젝트</b> 안에서 진행합니다.</p>
+
+      <h3>일반 채팅 vs 프로젝트</h3>
+      <div class="vs">
+        <div class="bad"><h4>일반 채팅</h4>
+          <ul><li>매번 조합 소개부터 다시 설명</li><li>필요한 파일을 매번 다시 업로드</li><li>대화가 여기저기 흩어짐</li><li>답변 형식이 그때그때 다름</li></ul></div>
+        <div class="good"><h4>프로젝트</h4>
+          <ul><li>지침 한 번 설정 → 모든 대화에 적용</li><li>참고 파일을 프로젝트에 보관</li><li>업무별 대화를 한곳에 모음</li><li>프로젝트 안에서 심층 리서치도 실행</li></ul></div>
+      </div>
+
+      <h3>프로젝트 만들기 3단계</h3>
+      <ol class="steps">
+        <li><b>프로젝트 생성</b><span>왼쪽 메뉴 ‘새 프로젝트’ → 이름: <b>제천로컬푸드 업무비서</b></span></li>
+        <li><b>지침 입력</b><span>조합 소개 · 문체 규칙 · 금지사항 (개인정보 · 추측)</span></li>
+        <li><b>파일 추가</b><span>조합소개 · 공문양식 · 회의록_공문양식 · 농가_출하안내문_예시 · 회의록_예시 (5개)</span></li>
+      </ol>
+      <p><b>실제 화면 순서:</b> 1. 새 프로젝트 → 2. 이름 입력 → 3. 프로젝트 설정 → 4. 지침 추가 → 5. 파일 추가</p>
+      <div class="box tip"><span class="box-title">TIP</span>메뉴 이름과 위치는 업데이트에 따라 달라질 수 있습니다. 프로젝트에는 참고 문서 5개만 올리고, 판매데이터는 미션 2에서 대화창에 첨부합니다.</div>
+
+      <h3>실습 파일 받기</h3>
+      <div class="file-sets" data-files="1,2"></div>
+    </section>
+
+    <section class="card" id="m1-guide">
+      <h2><span class="num">M1</span>지침도 메타프롬프트로 만들기</h2>
+      <p class="lead">PART 3의 메타프롬프트를 응용해, AI가 질문하고 내가 답하면 <b>바로 붙여넣을 지침문</b>이 나옵니다.</p>
+      <div class="prompt" id="p4-01" data-label="지침도 메타프롬프트로 만들기"><pre>ChatGPT 프로젝트 '제천로컬푸드 업무비서'의 지침을 만들고 싶어.
+나는 제천로컬푸드협동조합에서 [담당 업무: 경영지원·행정사무]를 맡고 있고,
+주로 [자주 하는 일: 공문·회의록 작성, 직매장 판매자료 정리, 농가 출하·정산 안내]를 해.
+좋은 지침을 만들기 위해 필요한 질문을 5개 해줘.
+내가 답하면 바로 붙여넣을 수 있는 지침문으로 정리해줘.</pre></div>
+      <div class="prompt" id="p4-02" data-label="프로젝트 지침 예시 1 (짧은 버전)"><pre>너는 제천로컬푸드협동조합의 행정 비서다
+조합: 직매장 3곳(1호점·이마트매장·배론점), 온라인몰, 꾸러미 운영
+문체: 공문은 개조식, 농가 안내는 쉬운 말
+숫자는 원본과 대조하고, 모르면 '확인 필요'로 표시
+개인정보는 다루지 않는다</pre></div>
+
+      <h3>프로젝트 지침 예시 2 — 지침에 붙여넣기</h3>
+      <p>아래 전체를 복사해 프로젝트 설정 → <b>지침</b>에 붙여넣습니다. 파일로도 받을 수 있습니다: <a href="files/project_instructions.txt" download="프로젝트_지침_예시.txt">프로젝트_지침_예시.txt ↓</a></p>
+      <div class="prompt" id="p4-03" data-label="프로젝트 지침 예시 2 — 제천로컬푸드 업무비서 (전체)"><pre>제천로컬푸드 업무비서 — 프로젝트 지침
+
+1. 역할 및 목적
+당신은 제천로컬푸드협동조합 경영지원·행정사무 담당자를 지원하는 AI 업무비서입니다.
+협동조합 행정, 농산물 유통, 직매장 판매관리 업무를 지원하며, 정확한 문서 작성과 데이터 분석을 통해 업무 효율을 높입니다.
+
+2. 주요 지원 업무
+① 행정 및 문서 작성
+공문, 회의록, 업무보고서, 업무계획서 작성
+회의 결정사항 및 담당자별 할 일 정리
+② 엑셀 판매자료 분석
+직매장별·품목별·기간별 매출 비교
+판매 부진 품목 분석 및 개선방안 제안
+분석 결과를 표와 그래프로 정리
+③ 농가 및 조합원 관리
+농산물 출하·수매 안내문 작성
+조합원 공지 및 문자 메시지 작성
+④ 홍보 및 행사 지원
+제철 농산물 판매행사 기획
+SNS 홍보문, 포스터 문구, 소비자 안내문 작성
+⑤ 경영지원 및 이사회 보고
+직매장 운영 현황과 실적 보고
+주요 문제점 및 개선방안 정리
+이사회 의사결정용 보고자료 작성
+
+3. 답변 및 문서 작성 원칙
+업무 목적에 따라 문서 형식과 문체를 자동 선택합니다.
+공문·보고서는 공식적이고 객관적으로 작성합니다.
+농가 안내문은 쉽고 명확하게, SNS 홍보문은 친근하게 작성합니다.
+핵심 내용을 먼저 제시하고 표와 체크리스트를 적극 활용합니다.
+복사하여 바로 사용할 수 있는 실무형 결과물을 제공합니다.
+
+4. 정확성 및 오류 검증
+제공된 자료와 확인 가능한 사실을 우선합니다.
+확인되지 않은 날짜, 금액, 담당자, 실적은 임의로 작성하지 않습니다.
+불확실한 내용은 '확인 필요' 또는 '추정'으로 표시합니다.
+계산, 합계, 증감률, 날짜 및 요일을 검증합니다.
+자료에 근거한 사실과 AI의 해석·제안을 구분합니다.
+원본 자료는 사용자 승인 없이 수정하지 않습니다.
+최신 정보는 가능한 경우 공식 자료를 확인하고 출처를 표시합니다.
+
+5. 엑셀 분석 4단계 처리
+엑셀 파일 분석은 반드시 다음 순서로 진행합니다.
+
+1단계: 원본 검증
+시트 구조, 누락값, 중복값, 수식 및 형식 오류 확인
+오류 목록을 표로 제시
+
+2단계: 사용자 확인
+오류별 처리방안 제안
+수정 범위와 방법에 대한 승인 요청
+
+3단계: 데이터 정제
+승인된 항목만 수정
+원본 보존 및 정제본 별도 작성
+수정 내역 보고
+
+4단계: 판매실적 분석
+매장·품목·기간별 실적 비교
+문제점, 개선방안 및 보고서 작성
+각 단계가 끝나면 반드시 멈추고 사용자 승인을 받은 후 다음 단계로 진행합니다.
+
+6. 보고서 작성 및 협업 원칙
+중요한 보고서는 자료 확인 → 초안 작성 → 사용자 검토 → 최종 작성 순서로 진행합니다.
+정보가 부족해도 확인 가능한 범위에서 먼저 작성합니다.
+불확실한 항목은 '확인 필요'로 표시합니다.
+단순 공지문과 문자 작성은 별도 승인 없이 바로 수행합니다.
+사용자의 요청 범위와 승인 절차를 준수합니다.
+요청 시 Word, Excel, PDF 등 적절한 파일 형식으로 결과물을 제공합니다.
+
+7. 결과물 및 자체 검증
+보고서는 핵심 요약, 현황, 문제점, 개선방안 순서로 작성합니다.
+업무 실행계획은 '담당자·할 일·기한·진행 상태' 표로 정리합니다.
+답변 마지막에는 계산·사실·날짜 중 오류 가능성이 있는 주요 항목 3개를 자체 점검하여 간단한 표로 표시합니다.
+확인되지 않은 내용을 사실처럼 단정하지 않습니다.
+
+8. 최우선 원칙
+정확성 > 원본 보존 > 사용자 승인 > 실무 활용성
+최종 목표는 경영지원 담당자의 반복 업무를 줄이고, 신뢰할 수 있는 문서와 분석 결과를 제공하는 것입니다.</pre></div>
+
+      <h3>프로젝트 작동 테스트</h3>
+      <p>대화창에 <b>판매데이터(가상).xlsx</b>를 첨부하고 아래 프롬프트를 입력합니다. 지침대로 1단계에서 멈추는지 확인합니다.</p>
+      <div class="prompt" id="p4-04" data-label="프로젝트 작동 테스트 — 1단계 원본 검증만"><pre>첨부한 엑셀 파일을 분석해 직매장 3곳의 판매실적을 비교해줘.
+단, 지금은 1단계인 원본 데이터 검증만 수행하고 발견한 오류를 표로 보여줘.
+내가 승인하기 전에는 데이터를 수정하거나 판매실적 분석을 진행하지 마.</pre></div>
+    </section>
+
+    <section class="card" id="m1-ship">
+      <h2><span class="num">M1</span>미션 ① 농가 출하 안내 — 양식 만들고 바로 쓰기</h2>
+      <p class="lead">‘제천로컬푸드 업무비서’ 프로젝트 → 새 대화에서 진행</p>
+      <div class="prompt" id="p4-05" data-label="농가 출하 안내 ① 양식 만들기"><pre>농가 출하 안내 양식을 만들어줘.
+항목: 품목·출하 마감 일시·출하 장소·준비물·문의처.
+빈칸은 [ ]로 표시하고, 안내문 1개와 단문 문자(한글 45자 이내) 1개를 함께 만드는 형식으로.</pre></div>
+      <p class="prompt-note">↓ 같은 대화창에서 이어서 입력! ChatGPT가 ①에서 만든 양식을 기억합니다.</p>
+      <div class="prompt short" id="p4-06" data-label="농가 출하 안내 ② 이번 주 내용 넣기"><pre>출하 안내 양식에 이번 주 내용을 넣어줘.
+사과 · 10/30(금) 오후 2시까지 · 1호점 집하장 · 상자 라벨 부착</pre></div>
+      <div class="prompt example" id="p4-07" data-label="출하 안내 결과 (가상)"><pre>[농가 출하 안내]
+품목: 사과
+마감: 10. 30.(금) 오후 2시
+장소: 1호점 집하장
+준비물: 상자 라벨 부착
+
+문자 · 단문
+[제천로컬푸드] 사과 출하 마감 10/30(금) 오후 2시, 1호점 집하장입니다.</pre></div>
+      <div class="box tip"><span class="box-title">TIP</span>양식을 한 번 만들어 두면, 다음부터는 내용 한 줄만 주면 안내문이 나옵니다.</div>
+    </section>
+
+    <section class="card" id="m1-minutes">
+      <h2><span class="num">M1</span>미션 ② 회의록 — 메모 한 장, 결과물 두 개</h2>
+      <p class="lead">같은 프로젝트에서 새 대화를 열어 진행 · ① 정식 회의록(참석자·안건·결정사항·후속조치) ② 담당자별 할 일표(담당·할 일·기한·상태)</p>
+      <div class="prompt" id="p4-08" data-label="가상 회의 메모 — 10/27 운영회의 (붙여넣기용)"><pre>10/27 운영회의
+- 배론점 사과 재고 많음, 주말 할인 검토(김팀장)
+- 11월 꾸러미 구성 확정, 다음 주까지
+- 이마트매장 POP 교체
+- 온라인몰 배송 문의 증가</pre></div>
+      <p class="prompt-note">파일로 받기: <a href="files/meeting_memo.txt" download="운영회의_메모(가상).txt">운영회의_메모(가상).txt ↓</a> — 메모를 대화창에 붙여넣은 뒤 아래 프롬프트를 입력합니다.</p>
+      <div class="prompt short" id="p4-09" data-label="회의록 + 담당자별 할 일표 만들기"><pre>이 회의 메모로 ① 공문 양식의 회의록 ② 담당자별 할 일표(담당·할 일·기한·상태)를 만들어줘.</pre></div>
+
+      <h3>결과 검증 · 프롬프트 개선</h3>
+      <div class="vs">
+        <div class="bad"><h4>1차 결과에서 흔한 문제</h4>
+          <ul><li>메모에 없는 담당자를 추측해 채움</li><li>기한을 임의 날짜로 작성</li><li>회의 날짜·참석자 누락</li><li>문자가 단문 길이를 넘김</li></ul></div>
+        <div class="good"><h4>AI는 빈칸을 그럴듯하게 채웁니다</h4>
+          <p>→ ‘추측 금지’ 규칙을 프로젝트 지침에 추가</p>
+          <p class="q">“지침에 이미 규칙이 있어서 이런 문제가 줄어듭니다”</p></div>
+      </div>
+      <div class="prompt" id="p4-10" data-label="개선 프롬프트 — 추측 금지·확인 필요 목록"><pre>메모에 없는 담당자·기한은 지어내지 말고 '확인 필요'로 표시해줘.
+마지막에 확인이 필요한 항목만 따로 목록으로 보여줘.</pre></div>
+    </section>
+
+    <section class="card" id="m1-faq">
+      <h2><span class="num">M1</span>고객 문의 FAQ · 클레임 응대 매뉴얼 <span class="slide-ref">선택</span></h2>
+      <p class="lead">‘제천로컬푸드 업무비서’ 프로젝트에서 진행 → 완성본은 향후 매장 응대와 <b>미션 6 고객응대 앱</b>에 활용</p>
+
+      <h3>고객 문의 FAQ 만들기</h3>
+      <div class="prompt" id="p4-11" data-label="고객 문의 FAQ 10개 만들기"><pre>직매장·온라인몰 고객이 자주 묻는 질문 10개와 답변 초안을 표로 만들어줘.
+조합 정책을 모르는 부분은 지어내지 말고 [확인 필요]로 비워둬.</pre></div>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>분류</th><th>예시 질문</th><th>확인 담당</th></tr></thead>
+        <tbody>
+          <tr><td>매장 이용</td><td>배론점 영업시간이 어떻게 되나요?</td><td>매장</td></tr>
+          <tr><td>원산지</td><td>이 사과는 어느 농가 건가요?</td><td>매장</td></tr>
+          <tr><td>교환·환불</td><td>시든 채소도 교환되나요?</td><td>운영</td></tr>
+          <tr><td>온라인몰</td><td>택배는 언제 도착하나요?</td><td>온라인</td></tr>
+          <tr><td>꾸러미</td><td>정기 신청이 가능한가요?</td><td>사업</td></tr>
+        </tbody>
+      </table></div>
+      <p class="prompt-note">※ 분류·담당은 예시입니다. 조합 업무 분장에 맞게 바꾸세요.</p>
+
+      <h3>클레임 응대 매뉴얼 만들기</h3>
+      <div class="tiles">
+        <div class="tile"><div class="t-no">1</div><b>공감</b><span>불편을 먼저 인정</span></div>
+        <div class="tile"><div class="t-no">2</div><b>사실 확인</b><span>구매일 · 품목 · 상태</span></div>
+        <div class="tile"><div class="t-no">3</div><b>해결안 제시</b><span>교환 · 환불 · 대체</span></div>
+        <div class="tile"><div class="t-no">4</div><b>재발 방지</b><span>원인 · 조치 안내</span></div>
+      </div>
+      <div class="box warn"><span class="box-title">⚠ 주의</span>‘규정상 안 됩니다’만 반복하기 · 고객 탓으로 들리는 표현 · 확인 안 된 약속(‘무조건 환불’)</div>
+      <div class="prompt" id="p4-12" data-label="직매장 클레임 응대 매뉴얼 만들기"><pre>직매장 클레임 응대 매뉴얼을 만들어줘.
+유형: 신선도·가격·품절·배송·계산 오류.
+유형별 응대 4단계, 권장 표현, 금지 표현을 표로.</pre></div>
+      <p class="prompt-note">↓ 같은 대화창에서 이어서 진행 → 다듬은 결과를 복사해 미션 6에서 사용</p>
+      <div class="prompt" id="p4-13" data-label="클레임 매뉴얼 다듬기"><pre>교환·환불 기간처럼 조합 규정이 필요한 부분은 지어내지 말고 [조합 규정 확인]으로 표시해줘.
+권장 표현은 매장에서 바로 말할 수 있게 한 문장으로 줄여줘.</pre></div>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>유형</th><th>응대 4단계 요약</th><th>권장 표현</th><th>금지 표현</th></tr></thead>
+        <tbody>
+          <tr><td>신선도</td><td>공감 → 구매일 확인 → 교환·환불 → 진열 점검</td><td>“불편을 드려 죄송합니다. 구매하신 날짜를 확인해 바로 도와드리겠습니다.”</td><td>“보관을 잘못하신 것 같아요”</td></tr>
+          <tr><td>가격</td><td>공감 → 가격 확인 → 산지 직송 설명 → 행사 안내</td><td>“가격 부담을 느끼셨군요. 이 상품은 제천 농가에서 당일 들어온 상품입니다.”</td><td>“싫으면 마트 가세요”</td></tr>
+        </tbody>
+      </table></div>
+      <p class="prompt-note">결과 예시 (가상)</p>
+      <div class="box note"><span class="box-title">가져가기</span>① 답변 아래 ‘복사’ 버튼으로 전체 복사 → ② 메모장 등에 붙여넣어 보관 → ③ 미션 6 고객응대 앱 만들 때 Gemini에 붙여넣기<br>앞 실습을 건너뛰었다면 → 실습 파일 <a href="files/claim_manual_sample.docx" download="클레임_응대_매뉴얼_예시(가상).docx">클레임_응대_매뉴얼_예시(가상).docx ↓</a>를 대신 사용</div>
+    </section>
+
+    <section class="card" id="m2">
+      <h2><span class="num">M2</span>판매데이터 분석 — 실습 데이터 살펴보기</h2>
+      <p class="lead"><b>상황</b> 다음 주 이사회 전, 직매장 3곳의 7~9월 판매자료를 정리해야 합니다 · <b>결과물</b> 정제 데이터 · 그래프 2개 · 이사회용 5줄 요약</p>
+      <div class="file-sets" data-files="3"></div>
+      <p>직매장 3곳 · 7~9월 · 80행 (가상 데이터)</p>
+      <div class="table-wrap"><table class="table" style="min-width:820px">
+        <thead><tr><th>판매일자</th><th>매장</th><th>농가</th><th>분류</th><th>품목</th><th>수량</th><th>단가</th><th>매출액</th><th>수수료율</th><th>정산액</th></tr></thead>
+        <tbody>
+          <tr><td>2026-07-03</td><td>1호점</td><td>햇살가득농원</td><td>과일</td><td>사과</td><td>12</td><td>15,000</td><td>180,000</td><td>15%</td><td>153,000</td></tr>
+          <tr><td>7/5</td><td>배론점</td><td>산마루농장</td><td>채소</td><td>상추</td><td>30</td><td>2,500</td><td>75,000</td><td>15%</td><td>63,750</td></tr>
+          <tr><td>2026.07.05</td><td>이마트매장</td><td>솔내음농원</td><td>과일</td><td>사과(부사)</td><td>8</td><td>15,000</td><td>120,000</td><td>15%</td><td>102,000</td></tr>
+          <tr><td>2026-07-08</td><td>1호점</td><td>맑은물양계</td><td>축산</td><td>유정란</td><td>20</td><td>9,000</td><td>170,000</td><td>15%</td><td>144,500</td></tr>
+          <tr><td>2026-07-08</td><td>1호점</td><td>맑은물양계</td><td>축산</td><td>유정란</td><td>20</td><td>9,000</td><td>170,000</td><td>15%</td><td>144,500</td></tr>
+        </tbody>
+      </table></div>
+      <div class="box warn"><span class="box-title">숨겨진 오류 5가지 — 직접 찾아보세요</span>날짜 형식 혼재 · 품목명 불일치 · 중복 행 · 매출 계산 오류 · 빈 칸</div>
+      <p><b>순서:</b> AI가 오류를 찾고 → 사람이 기준을 정하고 → AI가 정제·분석</p>
+
+      <h3>엑셀 파일 올리고 구조 파악하기</h3>
+      <p>분석 전에 ‘어떤 데이터인지’부터 AI와 함께 확인합니다. ① 판매데이터(가상).xlsx 대화창에 첨부 → ② 프롬프트 입력 → ③ 요약표 확인</p>
+      <div class="prompt" id="p4-14" data-label="엑셀 올리고 구조 파악하기"><pre>첨부한 판매데이터 엑셀의 구조를 요약해줘.
+행·열 개수, 열 이름과 데이터 형식, 기간, 매장·농가·품목 목록과 개수를 표로 보여줘.
+아직 수정하거나 분석하지는 마.</pre></div>
+      <div class="box note"><span class="box-title">결과 확인</span>행 80개 · 기간 7~9월 · 매장 3곳이 맞는지 원본 엑셀과 대조 · 구조 확인 → 오류 진단 → 기준 승인 → 정제 → 분석</div>
+    </section>
+
+    <section class="card" id="m2-clean">
+      <h2><span class="num">M2</span>데이터 진단 → 기준 승인 → 정제</h2>
+      <p class="lead">AI가 찾고, <b>사람이 기준을 승인</b>하고, AI가 정제합니다.</p>
+      <h3>1 진단 (AI)</h3>
+      <div class="prompt short" id="p4-15" data-label="데이터 품질 진단 (수정 금지)"><pre>이 파일의 데이터 품질 문제를 찾아 표로 정리해줘. 열: 유형·행 번호·내용·수정 제안. 아직 수정하지는 마.</pre></div>
+      <h3>2 기준 승인 (사람 확인)</h3>
+      <ul class="checks">
+        <li>날짜 형식 통일</li><li>중복 행 삭제 여부</li><li>계산 오류 처리 기준</li><li>빈 칸 처리 방법</li>
+      </ul>
+      <h3>3 정제 (AI)</h3>
+      <div class="prompt" id="p4-16" data-label="승인한 기준대로 정제 — 정제본·변경 내역 시트"><pre>승인한 기준대로 정제해줘.
+- 품목명은 괄호·띄어쓰기를 뺀 기본 이름으로 통일 (사과(부사)·사 과 → 사과, 감자(수미) → 감자)
+- 날짜는 YYYY-MM-DD, 중복 행은 삭제
+- 매출액은 수량×단가로 다시 계산하고 정산액도 다시 계산
+- 빈 칸은 지우거나 추측하지 말고 '확인 필요'로 표시
+원본 시트는 그대로 두고 '정제본'·'변경 내역' 시트를 추가한 엑셀 파일로 줘.</pre></div>
+    </section>
+
+    <section class="card" id="m2-analyze">
+      <h2><span class="num">M2</span>판매데이터 분석하기 · 검증하고 5줄로 요약하기</h2>
+      <p class="lead">정제본으로 4가지를 분석하고, 합계를 검산한 뒤 이사회용 5줄로 요약합니다.</p>
+      <div class="tiles">
+        <div class="tile"><div class="t-no">1</div><b>품목별 매출 TOP5</b><span>어떤 품목이 많이 팔렸나</span></div>
+        <div class="tile"><div class="t-no">2</div><b>매장별 매출 비교</b><span>1호점 · 이마트매장 · 배론점</span></div>
+        <div class="tile"><div class="t-no">3</div><b>월별 매출 추이</b><span>7월 → 8월 → 9월 변화</span></div>
+        <div class="tile"><div class="t-no">4</div><b>농가별 정산액</b><span>수수료 반영 정산</span></div>
+      </div>
+      <div class="prompt" id="p4-17" data-label="판매데이터 분석 — TOP5·매장별·월별·농가별 + 그래프 2개"><pre>정제본으로 ① 품목별 매출 TOP5 ② 매장별·월별 매출표 ③ 농가별 정산액을 만들어줘.
+그래프는 월별 추이(꺾은선)와 품목별 매출(막대) 2개로.</pre></div>
+      <div class="box tip"><span class="box-title">TIP</span>그래프 한글이 깨지면 → ‘한글 폰트를 적용해 다시 그려줘’ 또는 표만 받아 엑셀에서 차트 만들기</div>
+
+      <h3>검증하고 5줄로 요약하기</h3>
+      <div class="prompt" id="p4-18" data-label="검산표 — 원본·정제본·분석표 합계 비교"><pre>원본 합계, 정제본 합계, 분석표 합계를 나란히 비교하는 검산표를 만들어줘.
+차이가 있으면 이유를 설명해.</pre></div>
+      <div class="prompt" id="p4-19" data-label="이사회 보고용 5줄 요약"><pre>이사회 보고용으로 핵심 수치를 포함해 5줄로 요약해줘.
+수치는 분석표에 있는 것만 쓰고, 해석은 '추정'이라고 표시해.</pre></div>
+      <h3>검증 체크리스트</h3>
+      <ul class="checks">
+        <li>원본·정제본·분석표 합계 일치</li><li>단위(원·천 원) 표기</li><li>기간(7~9월) 명시</li>
+        <li>해석과 사실 구분</li><li>반올림 차이 확인</li><li>정제본 엑셀 받기 (미션 3에서 라이브러리로 첨부)</li>
+      </ul>
+      <h3>결과 예시 받기</h3>
+      <div class="file-sets" data-files="4"></div>
+    </section>
+
+    <section class="card" id="m2-settle">
+      <h2><span class="num">M2</span>농가별 정산 안내 <span class="slide-ref">선택</span></h2>
+      <p class="lead">정산표 한 장으로 <b>10개 농가 안내 문자</b>를 한 번에 만듭니다.</p>
+      <h3>① 일괄 생성</h3>
+      <ol class="steps">
+        <li><b>새 대화 열기</b><span>‘제천로컬푸드 업무비서’ 프로젝트에서</span></li>
+        <li><b>정산표 첨부</b><span>농가별_9월_정산표(가상).xlsx — <a href="files/farm_settlement_sep.xlsx" download="농가별_9월_정산표(가상).xlsx">받기 ↓</a></span></li>
+        <li><b>프롬프트 붙여넣기</b><span>아래 프롬프트를 그대로 입력</span></li>
+        <li><b>결과 표 확인</b><span>농가명 · 정산액 · 문자 · 글자 수</span></li>
+      </ol>
+      <div class="prompt" id="p4-20" data-label="농가별 정산 안내 문자 일괄 생성"><pre>이 정산표로 농가별 안내 문자를 만들어줘.
+[문자 틀]
+[제천로컬푸드] {농가명} 님, 9월 판매 정산액은 {정산액}원이며 {입금일} 입금 예정입니다. 감사합니다.
+결과는 표로: 농가명 · 정산액 · 문자 내용 · 글자 수</pre></div>
+      <div class="box note"><span class="box-title">결과 예시 (1행)</span>[제천로컬푸드] <b>해오름농원</b> 님, 9월 판매 정산액은 <b>856,800</b>원이며 <b>2026. 10. 12.(월)</b> 입금 예정입니다. 감사합니다.<br>{ } 자리에 정산표 값이 들어갑니다 · 글자 수 72자 → 단문(45자) 초과, 장문 발송</div>
+
+      <h3>② 발송 전 검증</h3>
+      <div class="prompt" id="p4-21" data-label="발송 전 검증 — 정산액 대조표"><pre>각 문자의 정산액이 정산표와 일치하는지 대조표를 만들어줘.
+일치하지 않거나 농가명이 다른 행은 빨간색으로 표시해.</pre></div>
+      <h3>발송 전 확인 4가지</h3>
+      <ul class="checks">
+        <li>농가명 철자</li><li>정산액(정산표와 일치)</li><li>입금 예정일</li><li>글자 수(단문 45자 / 장문 구분)</li>
+      </ul>
+      <div class="box warn"><span class="box-title">⚠ 주의</span>실제 발송 전 담당자 최종 확인 · 계좌번호 등 개인정보는 AI에 입력하지 않기</div>
+      <a class="link-btn" href="session_5.html">다음 · 미션 3·4 Work 이사회 보고 · 심층 리서치 →</a>
+    </section>
+
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+<div id="toast">복사되었습니다 ✓</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>initSessionPage(4);</script>
+</body>
+</html>

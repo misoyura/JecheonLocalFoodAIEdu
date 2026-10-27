@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PART 2 · ChatGPT 핵심 기능 · 제천로컬푸드 AI 실무교육</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-session">
+
+<div class="brandbar">
+  <div class="wrap">
+    <a class="brand-text" href="index.html">
+      <span class="brand-mark">제</span>
+      <span class="brand-name"><b>제천로컬푸드협동조합</b><small>JECHEON LOCAL FOOD COOPERATIVE</small></span>
+    </a>
+    <img src="images/logo-kiea.png" alt="한국강사교육협회">
+  </div>
+</div>
+
+<header class="header">
+  <div class="wrap">
+    <a class="home" href="index.html">← ChatGPT로 끝내는 조합 행정·사무 업무 혁신</a>
+    <p class="eyebrow">PART 2 · ChatGPT</p>
+    <h1>ChatGPT 핵심 기능</h1>
+    <p class="subtitle">업무 공간 · 모델 · 요금제 · 화면 구성 · 플러그인 · 이미지 생성 — 실습 전에 꼭 알아야 할 기능과 설정을 익힙니다.</p>
+  </div>
+</header>
+
+<nav class="nav" id="site-nav"></nav>
+
+<main>
+  <div class="wrap">
+
+    <section class="card" id="ready">
+      <h2><span class="num">01</span>실습 준비 체크 — 계정 · 앱 · 파일</h2>
+      <p class="lead">시작 전에 4가지를 확인합니다.</p>
+      <div class="tiles">
+        <div class="tile"><div class="t-no">✓</div><b>ChatGPT 로그인</b><span>chatgpt.com 또는 데스크톱 앱 · 유료 요금제 계정으로 로그인</span></div>
+        <div class="tile"><div class="t-no">✓</div><b>실습 파일 받기</b><span>판매데이터(가상) · 공문양식 · 회의록 예시 등 — <a href="index.html#files">실습 파일 다운로드</a></span></div>
+        <div class="tile"><div class="t-no">✓</div><b>Google 계정</b><span>Gemini canvas · Google Flow 실습용 · 개인 Gmail로 로그인</span></div>
+        <div class="tile"><div class="t-no">✓</div><b>화면 정리</b><span>브라우저 창 2개 (ChatGPT · 실습 파일) · 다운로드 폴더 위치 확인</span></div>
+      </div>
+      <div class="box tip"><span class="box-title">TIP</span>로그인 문제는 실습 시작 전에 해결합니다. 옆 사람과 서로 확인해 주세요!</div>
+    </section>
+
+    <section class="card" id="workspace">
+      <h2><span class="num">02</span>챗GPT 업무 환경 — 목적에 맞는 공간 선택</h2>
+      <p class="lead">대화는 <b>Chat</b>, 결과물을 끝까지 만드는 일은 <b>Work</b>, 개발은 <b>Codex</b></p>
+      <figure class="fig"><img src="images/chatgpt-workspace.jpg" alt="Chat(대화 중심) · Work(업무 수행 중심) · Codex(개발 중심) 비교와 Work에서 만들 수 있는 결과물" loading="lazy"></figure>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>공간</th><th>중심</th><th>이럴 때</th></tr></thead>
+        <tbody>
+          <tr><td>Chat</td><td>대화 중심</td><td>빠른 질문·검색·아이디어 탐색 · 일상적인 대화와 즉시 도움 · 간단하고 단발성 업무</td></tr>
+          <tr><td>Work</td><td>업무 수행 중심</td><td>분석·자료 정리·복합 업무 수행 · 여러 단계를 거쳐 결과물 제작 · 프로젝트 단위 업무</td></tr>
+          <tr><td>Codex</td><td>개발 중심</td><td>코드 작성·수정·테스트·디버깅 · 기술 문서·명령 실행·검토</td></tr>
+        </tbody>
+      </table></div>
+      <p><b>Work에서 만들 수 있는 결과물</b> — 문서(보고서·기획안) · 스프레드시트(데이터 분석·정리) · 프레젠테이션(PPT·슬라이드) · 보고서(요약·분석 보고) · Site(웹사이트·대시보드)</p>
+
+      <h3>ChatGPT 5.6 모델 선택 가이드</h3>
+      <p>업무와 목적과 상황에 맞는 모델을 선택해 더 빠르고 정확한 결과를 얻으세요.</p>
+      <figure class="fig"><img src="images/chatgpt-models.jpg" alt="Sol · Terra · Luna 모델 비교" loading="lazy"></figure>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>모델</th><th>특징</th><th>이럴 때</th></tr></thead>
+        <tbody>
+          <tr><td>Sol</td><td>최고 성능 · 정밀 분석 (정확도·깊이·복잡성)</td><td>복잡하고 중요한 의사결정 · 심층 분석 · 고품질 결과물</td></tr>
+          <tr><td>Terra</td><td>균형 잡힌 성능 · 일상 업무 (균형·효율·범용성)</td><td>문서 작성·자료 정리 · 데이터 분석·정보 요약 · 일반 업무</td></tr>
+          <tr><td>Luna</td><td>빠른 속도 · 비용 효율 (속도·경제성·대량 처리)</td><td>빠른 응답 · 반복 작업·분류·추출 · 간단한 요약·정리</td></tr>
+        </tbody>
+      </table></div>
+
+      <h3>단순 대화(Chat)에서 업무 위임(Work)으로</h3>
+      <figure class="fig"><img src="images/chat-vs-work.jpg" alt="[Chat] 질문·요청에 즉각 응답 vs [Work] 분석·계획·도구 활용·결과물 생성" loading="lazy"></figure>
+      <div class="vs">
+        <div class="bad"><h4>[Chat] 단순 대화 모드</h4><p class="q">질문·요청에 즉각 응답</p><p>사용자의 질문과 프롬프트에 응답하며 대화 중심으로 작업</p></div>
+        <div class="good"><h4>[Work] 실행형 업무 에이전트</h4><p class="q">분석 · 계획 · 도구 활용 · 결과물 생성</p><p>복잡한 업무를 여러 단계로 계획·실행하고 문서·분석·슬라이드 등 결과물까지 완성</p></div>
+      </div>
+    </section>
+
+    <section class="card" id="plans">
+      <h2><span class="num">03</span>챗GPT 플랜과 사용 한도</h2>
+      <p class="lead">요금제에 따라 쓸 수 있는 모델·기능·사용량이 다릅니다. 오늘 실습은 <b>유료 요금제</b> 기준입니다.</p>
+      <figure class="fig"><img src="images/chatgpt-plans.jpg" alt="ChatGPT 플랜 — Free · Go · Plus · Pro" loading="lazy"><figcaption>강의 시점 화면 기준 · 가격과 구성은 바뀔 수 있습니다</figcaption></figure>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>플랜</th><th>월 요금</th><th>주요 내용</th></tr></thead>
+        <tbody>
+          <tr><td>Free</td><td>₩0</td><td>코어 모델 · 제한적 메시지 및 업로드 · 제한적 이미지 생성 · 제한적 메모리</td></tr>
+          <tr><td>Go</td><td>₩13,000</td><td>메시지·업로드 한도 증가 · 더 많은 이미지 생성 · 더 많이 기억하는 메모리 · 확장된 음성 모드 (광고 포함 가능)</td></tr>
+          <tr><td>Plus</td><td>₩29,000</td><td>고급 모델 · Thinking 고급 이미지 생성 · 더 많은 메모리 · Codex 코딩 에이전트 · 확장된 심층 리서치 · 프로젝트 및 맞춤형 GPT</td></tr>
+          <tr><td>Pro</td><td>₩159,000~</td><td>Plus의 모든 기능 + 5배 또는 20배 사용량 · Frontier Pro 모델 · 최대 심층 리서치 · 무제한 코어 채팅 등</td></tr>
+        </tbody>
+      </table></div>
+
+      <div class="vs">
+        <div class="bad">
+          <h4>무료 사용 한도</h4>
+          <ul>
+            <li>GPT-5.5 Instant 제한적 사용 (※상황에 따라 사용량 편차 있음)</li>
+            <li>언어 모델 선택이 불가 (일반 채팅)</li>
+            <li>GPT-5.5 Instant 5시간 단위 사용량 제한 (횟수 차감되면 자동으로 mini로 전환)</li>
+            <li>파일첨부 가능 (한 번에 최대 5개 동시 첨부, 한글파일 첨부 가능)</li>
+            <li>데이터분석 — 표 작성, 웹검색, 그래프 변환, 파일형식 변환 후 파일 다운로드 가능</li>
+            <li>GPT 탐색 사용 (GPT 제작은 불가)</li>
+            <li>Project 제작 가능</li>
+            <li>이미지 생성 (최대 6장, 변동 가능)</li>
+            <li>잘 생각하기, 심층 리서치 모델 제한적 사용</li>
+          </ul>
+        </div>
+        <div class="good">
+          <h4>유료 사용 한도</h4>
+          <ul>
+            <li>GPT-5.6 시대 개막 (2026.7.9 업데이트)</li>
+            <li>GPT-5.5 Instant 3시간 160챗 (횟수 차감되면 자동으로 mini로 전환)</li>
+            <li>추론 옵션(Medium/High/Extra High) 선택 시 최신 GPT-5.6 Sol 작동</li>
+            <li>Work 탭 신설: Sol·Terra·Luna 3개 모델 직접 선택 + 수준 설정 가능<br>— Sol: 최고성능 플래그십 / Terra: 일상업무용 균형형 / Luna: 최고속·최저가</li>
+            <li>파일 형식 변환, 파일 다운로드</li>
+            <li>횟수 제한 없이 이미지 생성 및 수정 가능</li>
+            <li>Tasks(일정예약)</li>
+            <li>심층리서치 기능 제한적 사용 · 에이전트 기능 제한적 사용</li>
+            <li>Codex Agent (코드·문서·도구 연동)</li>
+            <li>Custom GPT 만들기·공유 (GPT 스토어 업로드 가능)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box note"><span class="box-title">※ 파일 업로드 크기 제한</span>
+        한 번에 업로드할 수 있는 파일 수: 최대 10개 (단, 파일 크기 제한 및 사용자/조직별 업로드 용량 제한) · 최대 파일 크기: 한 파일당 512MB · 텍스트 및 문서 파일은 2M 토큰(문서 내용의 길이에 따른 제한) · 스프레드시트는 행 크기에 따라 약 50MB · 이미지 파일은 한 이미지당 20MB</div>
+
+      <h3>챗GPT 홈 화면 — 무료 vs 유료</h3>
+      <div class="box warn"><span class="box-title">무료 홈 화면</span>무료의 Think는 GPT-5.6 Luna 기반이며, 무료에서는 <b>Work를 사용할 수 없습니다.</b></div>
+    </section>
+
+    <section class="card" id="settings">
+      <h2><span class="num">04</span>데이터 관리 · 개인맞춤설정 · 임시 채팅</h2>
+      <p class="lead">실습 전에 <b>데이터 설정</b>을 확인하고, 내 업무에 맞는 <b>답변 방식</b>을 미리 정해 둡니다.</p>
+
+      <h3>챗GPT — 데이터 관리</h3>
+      <p>설정 → <b>데이터 관리</b>에서 ‘모델 개선을 위한 데이터 학습 허용’ 여부를 확인합니다. 채팅이 모델 학습에 사용될지 직접 설정할 수 있습니다.</p>
+      <figure class="fig"><img src="images/data-control-2.jpg" alt="ChatGPT 설정 › 데이터 관리 화면 — 모델 개선을 위한 데이터 학습 허용 토글" loading="lazy"></figure>
+
+      <h3>챗GPT — 개인맞춤설정</h3>
+      <p>설정 → <b>개인 맞춤 설정</b>의 ‘사용자 지정 지침’에 원하는 답변 방식을 적어 두면 모든 대화에 적용됩니다.</p>
+      <figure class="fig"><img src="images/personalize.jpg" alt="ChatGPT 개인 맞춤 설정 화면" loading="lazy"></figure>
+      <div class="prompt" id="p2-01" data-label="개인맞춤설정 — 사용자 지정 지침 예시"><pre>추측하거나 단정하지 말고, 확인 가능한 정보와 근거를 중심으로 답변한다.
+확실하지 않은 내용은 "확실하지 않음", "추가 확인 필요"라고 표시한다.
+최신 정보가 필요한 내용은 현재 기준으로 확인하여 답변한다.
+법률, 의료, 금융, 세금, 안전 등 전문 분야는 일반 정보와 전문 판단을 구분하여 설명한다.
+중요한 정보는 정부기관, 공공기관, 공식 홈페이지 등 신뢰할 수 있는 출처를 우선 참고한다.
+답변은 핵심부터 제시하고, 필요한 경우 단계별로 쉽게 설명한다.
+어려운 전문용어보다 초보자도 이해하기 쉬운 표현과 실제 예시를 사용한다.
+여러 방법이 있을 경우 장단점을 비교하고, 가장 쉽게 적용할 수 있는 방법부터 제시한다.
+글쓰기나 업무 문서는 목적과 대상에 맞게 정확하고 간결하게 작성한다.
+사용자가 바로 활용할 수 있도록 예시, 실행 방법, 체크리스트 등을 함께 제공한다.</pre></div>
+      <div class="box tip"><span class="box-title">핵심</span>개인맞춤설정은 길게 쓰는 것보다 <b>“내가 누구인지 + 어떤 답변을 원하는지 + 무엇을 피할지”</b>를 넣는 것이 핵심</div>
+
+      <h3>임시 채팅</h3>
+      <p>대화 기록에 남기지 않는 일회성 채팅입니다. 일시적으로 확인할 내용에 활용합니다.</p>
+      <figure class="fig"><img src="images/temp-chat.jpg" alt="ChatGPT 임시 채팅 화면" loading="lazy"></figure>
+      <div class="box warn"><span class="box-title">⚠ 주의</span>임시 채팅이라고 해서 개인정보나 조합 내부 자료를 자유롭게 입력해도 된다는 뜻은 아닙니다.</div>
+    </section>
+
+    <section class="card" id="work">
+      <h2><span class="num">05</span>Work 탭 핵심 기능</h2>
+      <p class="lead">2026년 7월 9일 업데이트로 생긴 <b>‘실제 업무 결과물을 만들어내는 에이전트 환경’</b></p>
+      <p>일반 Chat이 대화 중심이라면, Work는 실제 업무 결과물(문서·발표자료·스프레드시트 등)을 만들어 내는 에이전트 환경입니다.</p>
+      <ol class="steps">
+        <li><b>모델 직접 선택</b><span>GPT-5.6 Sol / Terra / Luna 3개 모델 중 선택 + 추론 수준 설정 가능</span></li>
+        <li><b>연결된 업무 앱·파일 활용</b><span>Gmail, Google Calendar 등에서 필요한 정보를 찾아 업무 수행 (“내 할 일 정리해줘”, “후속 이메일 초안 작성해줘” 등)</span></li>
+        <li><b>결과물 생성</b><span>문서, 스프레드시트, 프레젠테이션, 보고서 등을 만들거나 편집 · 기존 파일이나 템플릿을 참고해 형식·레이아웃·브랜드 등을 맞추는 것도 지원</span></li>
+      </ol>
+      <ul>
+        <li><b>프로젝트 선택</b> — 기존 프로젝트와 연결해 맥락 유지한 채 작업</li>
+        <li><b>파일 다운로드</b> — 결과물 생성 및 저장/활용</li>
+      </ul>
+      <div class="box note"><span class="box-title">미션 3에서 실습</span>오늘 미션 3에서 Work로 이사회 보고 슬라이드 3장과 1쪽 요약 문서를 만듭니다. → <a href="session_5.html#m3">미션 3 바로가기</a></div>
+    </section>
+
+    <section class="card" id="plugins">
+      <h2><span class="num">06</span>사이드바 메뉴와 플러그인 — Gmail, Canva 등</h2>
+      <p class="lead">플러그인을 추가하면 ChatGPT 대화창에서 바로 메일을 찾고 디자인을 만듭니다.</p>
+      <figure class="fig"><img src="images/sidebar-apps.jpg" alt="ChatGPT 사이드바 메뉴와 플러그인" loading="lazy"></figure>
+
+      <h3>플러그인 — Gmail</h3>
+      <p>Gmail 추가 후 → 도구 메뉴에서 <b>Gmail</b> 선택 → 아래 프롬프트 입력</p>
+      <div class="prompt short" id="p2-02" data-label="플러그인 Gmail — 최근 5일 메일 핵심 요약"><pre>최근 5일간 내 메일함을 검색해서 핵심사항만 알려줘. 중요하거나 긴급한 사항이 있으면 빨간색으로 표시해줘</pre></div>
+
+      <h3>플러그인 — Canva</h3>
+      <p>Canva 추가 후 → 도구 메뉴에서 <b>Canva</b> 선택 → 아래 프롬프트 입력</p>
+      <div class="prompt" id="p2-03" data-label="플러그인 Canva — 칠순 축하 현수막 (300×90cm)"><pre>가로 300cm × 세로 90cm 크기의 어머님 칠순 축하 현수막을 만들어줘. 전체 디자인은 따뜻하고 품격 있는 분위기로 구성하고, 고급스러운 꽃 장식과 은은한 색감을 활용해줘. 중앙에는 "사랑하는 어머님의 칠순을 진심으로 축하드립니다"라는 문구를 크고 잘 보이게 배치해줘. 한쪽에는 가족사진을 넣을 수 있도록 가로 약 80cm × 세로 60cm 비율의 사진 공간을 마련하고, 사진이 들어갈 위치는 자연스럽고 균형 있게 구성해줘. 전체적으로 멀리서도 글자가 잘 보이도록 가독성을 높이고, 가족이 함께 축하하는 따뜻하고 정성스러운 칠순 축하 현수막으로 디자인해줘.</pre></div>
+      <figure class="fig"><img src="images/canva-banner.jpg" alt="Canva로 만든 칠순 축하 현수막 결과 예시" loading="lazy"><figcaption>Canva 이용 현수막 — 결과 예시</figcaption></figure>
+      <div class="box tip"><span class="box-title">보너스</span>같은 방법으로 조합 판매전 현수막도 만들 수 있습니다. → <a href="session_6.html#bonus">보너스 실습 바로가기</a></div>
+    </section>
+
+    <section class="card" id="image">
+      <h2><span class="num">07</span>이미지 생성 · 편집 (실습: 아이콘 디자인)</h2>
+      <p class="lead">왼쪽 메뉴 <b>더 보기 → 이미지</b>에서 ‘아이콘 디자인’ 같은 템플릿을 고르고 사진을 올리면 바로 이미지를 만들어 줍니다.</p>
+      <figure class="fig"><img src="images/image-gen-icon.jpg" alt="ChatGPT 이미지 메뉴에서 반려견 사진으로 아이콘 디자인을 만든 예시" loading="lazy"></figure>
+      <h3>이미지 생성 — Image 2.0</h3>
+      <figure class="fig"><img src="images/image-gen-2.jpg" alt="ChatGPT Image 2.0 이미지 생성 화면" loading="lazy"></figure>
+      <div class="box note"><span class="box-title">미션 5에서 실습</span>사과 포스터와 홍보영상용 4컷 이미지를 만듭니다. → <a href="session_6.html#m5-poster">미션 5 바로가기</a></div>
+    </section>
+
+    <section class="card" id="security">
+      <h2><span class="num">08</span>조합 업무 AI 보안 수칙 3가지</h2>
+      <p class="lead">편리함보다 먼저 지켜야 할 기본 원칙</p>
+      <div class="tiles">
+        <div class="tile"><div class="t-no">01</div><b>가명으로 바꾸기</b><span>농가·조합원 실명, 연락처, 계좌번호는 ‘농가A’, ‘010-****’처럼 바꿔 입력</span></div>
+        <div class="tile"><div class="t-no">02</div><b>필요한 부분만</b><span>계약서·내부 금액자료 원본 대신, 분석에 필요한 열·항목만 남겨 업로드</span></div>
+        <div class="tile"><div class="t-no">03</div><b>원본과 대조</b><span>AI가 낸 합계·수치·출처는 반드시 원본으로 한 번 더 확인</span></div>
+      </div>
+      <div class="box tip"><span class="box-title">TIP</span>개인 요금제는 설정의 ‘데이터 제어’에서 모델 개선 사용 여부를 확인하세요. 조직용 요금제는 조합의 계정 정책을 확인하고, ‘입력 금지 정보 목록’을 정해 두면 안전합니다.</div>
+      <a class="link-btn" href="session_3.html">다음 · PART 3 효과적인 프롬프트 설계 →</a>
+    </section>
+
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+<div id="toast">복사되었습니다 ✓</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>initSessionPage(2);</script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PART 3 · 효과적인 프롬프트 설계 · 제천로컬푸드 AI 실무교육</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-session">
+
+<div class="brandbar">
+  <div class="wrap">
+    <a class="brand-text" href="index.html">
+      <span class="brand-mark">제</span>
+      <span class="brand-name"><b>제천로컬푸드협동조합</b><small>JECHEON LOCAL FOOD COOPERATIVE</small></span>
+    </a>
+    <img src="images/logo-kiea.png" alt="한국강사교육협회">
+  </div>
+</div>
+
+<header class="header">
+  <div class="wrap">
+    <a class="home" href="index.html">← ChatGPT로 끝내는 조합 행정·사무 업무 혁신</a>
+    <p class="eyebrow">PART 3 · 프롬프트 · 메타프롬프트</p>
+    <h1>효과적인 프롬프트 설계</h1>
+    <p class="subtitle">프롬프트는 AI에게 건네는 업무 요청서입니다. 무엇을 담아 요청하느냐에 따라 같은 자료라도 결과가 달라집니다.</p>
+  </div>
+</header>
+
+<nav class="nav" id="site-nav"></nav>
+
+<main>
+  <div class="wrap">
+
+    <section class="card" id="six">
+      <h2><span class="num">01</span>프롬프트란? 요청에 담을 6가지</h2>
+      <p class="lead">프롬프트 = AI에게 건네는 <b>업무 요청서</b> · 역할은 선택, 나머지 5가지는 꼭 확인합니다.</p>
+      <div class="table-wrap"><table class="table">
+        <thead><tr><th>요소</th><th>스스로 확인할 질문</th><th>조합 업무 예시</th></tr></thead>
+        <tbody>
+          <tr><td>역할 (선택)</td><td>누가 되어 쓰나요?</td><td>제천로컬푸드 행정 담당자</td></tr>
+          <tr><td>목적</td><td>왜 쓰나요?</td><td>사과 출하 마감 시간 변경 안내</td></tr>
+          <tr><td>맥락</td><td>누가 읽나요?</td><td>출하 농가 (어르신 농가 포함)</td></tr>
+          <tr><td>자료</td><td>무엇을 근거로 쓰나요?</td><td>운영회의 결정 사항, 출하 일정표</td></tr>
+          <tr><td>형식</td><td>어떤 모습이 필요한가요?</td><td>안내문 1장 + 단문 문자(한글 45자 이내)</td></tr>
+          <tr><td>기준</td><td>무엇을 지켜야 하나요?</td><td>쉬운 말 · 날짜는 원본과 대조 · 미확정은 ‘확인 필요’</td></tr>
+        </tbody>
+      </table></div>
+      <h3>한 문장으로</h3>
+      <div class="prompt short" id="p3-01" data-label="6가지를 한 문장으로 — 사과 출하 마감 변경 안내"><pre>너는 제천로컬푸드 행정 담당자야. 운영회의 결정에 따라 출하 농가에 사과 출하 마감 변경을 알리려고 해. 쉬운 말로 안내문 1장과 단문 문자를 만들고, 미확정 내용은 '확인 필요'로 표시해줘.</pre></div>
+    </section>
+
+    <section class="card" id="why">
+      <h2><span class="num">02</span>왜 프롬프트가 중요한가</h2>
+      <p class="lead">같은 자료라도 무엇을 담아 요청하느냐에 따라 결과가 달라집니다.</p>
+      <div class="prompt-group">
+        <div class="prompt short example" id="p3-02" data-label="단순 질문 (비교용)"><pre>매출 분석해줘.</pre></div>
+        <div class="box warn"><span class="box-title">빠진 것</span>누가 읽는지 (맥락) · 어떤 자료·기간인지 (자료) · 어떤 모습으로 받을지 (형식) · 무엇을 지켜야 할지 (기준)</div>
+      </div>
+      <div class="prompt" id="p3-03" data-label="업무지시형 질문 — 직매장 7~9월 매출 이사회 보고"><pre>너는 제천로컬푸드 행정 담당자야. 직매장 3곳의 7~9월 판매자료야. 이사회에 보고하려고 해. 품목별·월별 매출을 표로 정리하고, 매출이 줄어든 품목 3개와 원인을 2줄씩 써줘. 수치는 자료에 있는 것만 쓰고, 원인은 '추정'으로 표시해줘.</pre></div>
+      <div class="box note"><span class="box-title">✓ 역할 · 자료 · 목적·맥락 · 형식 · 기준</span>6가지가 모두 들어 있어 결과가 분명해집니다.</div>
+    </section>
+
+    <section class="card" id="examples">
+      <h2><span class="num">03</span>업무지시형 프롬프트 예시 4가지</h2>
+      <p class="lead">역할 없이도 <b>자료 · 목적·맥락 · 형식 · 기준</b> 4가지를 담으면 지시가 분명해집니다.</p>
+      <div class="prompt" id="p3-04" data-label="업무지시형 ① 회의록 + 담당자별 할 일표"><pre>아래는 10/27 운영회의 메모야. 조합 직원 전체가 회의 결과를 공유하려고 해. 회의록으로 정리하고, 담당자별 할 일표(담당·할 일·기한)를 따로 만들어줘. 메모에 없는 담당자·기한은 지어내지 말고 '확인 필요'로 표시해줘.</pre></div>
+      <div class="prompt" id="p3-05" data-label="업무지시형 ② 농가 정산 안내 문자"><pre>첨부한 농가별 9월 정산표야. 출하 농가에 정산 금액과 입금일을 알리려고 해. 농가별 안내 문자를 표로 만들어줘. (농가명·정산액·문자·글자 수) 금액은 정산표와 똑같이 쓰고, 계좌번호 등 개인정보는 넣지 마.</pre></div>
+      <div class="prompt" id="p3-06" data-label="업무지시형 ③ 꾸러미 고객 안내 (SNS·POP)"><pre>11월 꾸러미 구성과 가격표야. 직매장·온라인몰 고객에게 꾸러미 신청을 안내하려고 해. SNS 게시글 1개와 매장 POP 문구 2줄로 써줘. 효능은 과장하지 말고, 가격·신청 기간은 표와 똑같이 써줘.</pre></div>
+      <div class="prompt" id="p3-07" data-label="업무지시형 ④ 고객 문의 답변 (시든 채소 교환)"><pre>아래는 고객 문의 내용과 우리 교환·환불 기준이야. 시든 채소 교환을 요청한 고객에게 답변하려고 해. 정중한 답변 문자 1개를 5줄 이내로 써줘. 먼저 공감하고, 기준에 없는 약속(무조건 환불 등)은 하지 마.</pre></div>
+    </section>
+
+    <section class="card" id="advanced">
+      <h2><span class="num">04</span>중급 프롬프트 기법 <span class="slide-ref">선택</span></h2>
+      <p class="lead">예시 주기 · 단계별 처리 · 자기 검증 · 대상별 톤 변환</p>
+
+      <h3>① 예시 주기 — 원하는 형식의 예시를 1~2개 보여주면 그대로 따라 씁니다</h3>
+      <div class="prompt" id="p3-08" data-label="중급 기법 ① 예시 주기 — 출하 안내 문자"><pre>아래 예시와 같은 형식으로 이번 주 출하 안내 문자 3개를 써줘.
+[예시] [제천로컬푸드] 10/30(금) 사과 출하 마감은 오후 2시입니다.</pre></div>
+
+      <h3>② 단계별 처리 — 복잡한 일은 단계로 나누고, 단계마다 확인받게 합니다</h3>
+      <div class="prompt" id="p3-09" data-label="중급 기법 ② 단계별 처리 — 판매자료 4단계"><pre>이 판매자료를 4단계로 처리할 거야.
+1) 오류 찾기 2) 내가 확인 3) 정제 4) 분석
+한 번에 하지 말고, 단계마다 멈추고 내 확인을 받아.</pre></div>
+
+      <h3>③ 자기 검증 요청 — AI에게 스스로 틀릴 수 있는 부분을 점검하게 합니다</h3>
+      <div class="prompt short" id="p3-10" data-label="중급 기법 ③ 자기 검증 요청"><pre>답변을 마친 뒤, 계산·사실·날짜 중 틀릴 수 있는 부분 3가지를 스스로 점검해서 표로 표시해줘.</pre></div>
+
+      <h3>④ 대상별 톤 변환 — 같은 공지를 읽는 사람에 맞게</h3>
+      <div class="tiles">
+        <div class="tile"><b>소비자 · SNS</b><span>가을 특별 판매전! 전 품목 15% 할인</span></div>
+        <div class="tile"><b>농가 · 문자</b><span>수매 신청 11/2~11/6 17시까지</span></div>
+        <div class="tile"><b>이사회 · 보고</b><span>수매 및 특별 판매전 추진 보고</span></div>
+      </div>
+      <div class="prompt" id="p3-11" data-label="중급 기법 ④ 대상별 톤 변환 — 가을 수매·특별 판매전 공지"><pre>아래 공지를 소비자 SNS·농가 문자·이사회 보고용으로 각각 바꿔줘.
+
+- 제목: 2026년 가을 제철 농산물(사과·배추) 수매 및 특별 판매전 안내
+- 개요: 제천 지역 조합원 농가의 판로 확대와 시민들의 건강한 먹거리 제공을 위해 '2026 가을 제철 농산물 수매 및 직거래 특별 판매전'을 개최합니다.
+- 수매 안내 (농가 대상):
+  품목: 사과(부사), 절임배추용 김장 배추
+  수매 신청 기간: 2026년 11월 2일(월) ~ 11월 6일(금) 17:00까지
+  출하 기준: 잔류농약 검사 필증 제출 필수
+- 특별 판매전 (소비자 대상):
+  행사 기간: 2026년 11월 12일(목) ~ 11월 20일(금)
+  장소: 제천로컬푸드 직매장 및 온라인 쇼핑몰
+  혜택: 조합원 농산물 전 품목 15% 할인, 5만 원 이상 구매 시 로컬푸드 장바구니 증정
+- 문의: 제천로컬푸드협동조합 사무국 (043-XXX-XXXX)</pre></div>
+      <div class="prompt example" id="p3-12" data-label="톤 변환 결과 — SNS · 농가 문자 · 이사회 보고"><pre>① 소비자 SNS 홍보용
+🍎🥬 제천 가을 농산물 특별 판매전!
+📅 11/12(목) ~ 11/20(금)
+🎉 조합원 농산물 전 품목 15% 할인!
+🎁 5만 원 이상 구매 시 장바구니 증정!
+📍 제천로컬푸드 직매장 및 온라인 쇼핑몰
+신선한 제천 농산물로 가을 식탁을 풍성하게!
+#제천로컬푸드 #가을농산물 #특별할인
+
+② 조합원 농가 문자 발송용
+[제천로컬푸드] 가을 농산물 수매 안내
+■ 품목: 사과(부사), 김장 배추
+■ 신청: 11/2(월)~11/6(금) 17시
+■ 조건: 잔류농약 검사 필증 필수
+기한 내 신청 바랍니다. ☎ 043-XXX-XXXX
+
+③ 이사회 보고용
+2026년 가을 제철 농산물 수매 및 특별 판매전 추진 보고
+1. 추진 목적
+   제천 지역 조합원 농가의 판로 확대 및 지역 농산물 소비 활성화
+2. 주요 추진 내용
+   수매 품목: 사과(부사), 김장 배추
+   수매 신청: 11/2(월) ~ 11/6(금) 17시
+   출하 조건: 잔류농약 검사 필증 제출 및 등급 기준 준수
+   판매 기간: 11/12(목) ~ 11/20(금)
+   판매 장소: 제천로컬푸드 직매장 및 온라인 쇼핑몰
+   판매 혜택: 전 품목 15% 할인, 5만 원 이상 구매 시 장바구니 증정
+3. 기대효과
+   조합원 농가의 안정적인 판로 확대
+   지역 농산물 소비 촉진 및 직매장 이용 활성화
+4. 추가 확인사항
+   수매 물량·단가, 행사 예산, 사은품 수량 및 출하 등급 기준 확인 필요</pre></div>
+    </section>
+
+    <section class="card" id="meta">
+      <h2><span class="num">05</span>메타프롬프트 (Meta Prompt)</h2>
+      <p class="lead">AI에게 바로 결과를 요구하지 않고, <b>“좋은 질문”을 먼저 만들어 달라고</b> 요청하는 방법 — AI에게 질문 만드는 것을 부탁하는 질문</p>
+      <ol class="steps">
+        <li><b>목표 말하기</b><span>내가 하려는 일을 AI에게 알립니다.</span></li>
+        <li><b>AI가 질문</b><span>AI가 필요한 정보를 질문합니다.</span></li>
+        <li><b>내가 답변</b><span>질문에 답합니다.</span></li>
+        <li><b>프롬프트 완성</b><span>AI가 답변을 바탕으로 프롬프트를 정리합니다.</span></li>
+        <li><b>결과 생성</b><span>완성된 프롬프트로 바로 실행합니다.</span></li>
+      </ol>
+
+      <h3>메타프롬프트 기본형 — 제천로컬푸드 버전</h3>
+      <p><b>실습 목표:</b> 이번 일 1건을 위한 프롬프트 완성</p>
+      <ul>
+        <li>① <b>[담당 업무]</b> = 내 직무 — 예) 경영지원·행정사무 / 직매장 운영</li>
+        <li>② <b>[할 일]</b> = 이번에 처리할 일 1건 — 예) 이사회 보고자료 만들기 / 농가 출하 일정 공지</li>
+        <li>③ AI가 하는 질문 3개에 답하기</li>
+        <li>④ 완성된 프롬프트로 바로 실행 → 미션 1에서 ‘지침 만들기’로 응용</li>
+      </ul>
+      <div class="prompt" id="p3-13" data-label="메타프롬프트 기본형 — 제천로컬푸드 버전"><pre>나는 제천로컬푸드협동조합에서 [담당 업무]를 맡고 있어.
+이번에 [할 일]을 해야 해.
+이 일을 잘하기 위해 필요한 핵심 질문을 3가지만 나에게 해줘.
+내가 답하면 그 내용을 바탕으로 가장 효과적인 프롬프트를 만들어줘.
+마지막에는 내가 바로 사용할 수 있도록 완성된 프롬프트만 정리해줘.</pre></div>
+    </section>
+
+    <section class="card" id="letter">
+      <h2><span class="num">06</span>공문 초안 작성</h2>
+      <p class="lead">형식은 AI에게, 내용 확인은 사람이</p>
+      <div class="prompt" id="p3-14" data-label="공문 초안 — 11월 꾸러미 참여 농가 모집"><pre>아래 내용으로 공문 초안을 작성해줘.
+- 형식: 수신·제목·본문 (1. 2. 가. 나.)·붙임, 마지막에 '끝.' 표시
+- 날짜는 '11. 2.(월)' 형식
+- 내용: 11월 꾸러미 사업 참여 농가 모집, 기간 11/2~11/7, 매장 방문 또는 전화 신청</pre></div>
+      <div class="box note"><span class="box-title">결과 예시 (가상)</span>
+        수신  조합 출하 농가<br>
+        제목  11월 꾸러미 사업 참여 농가 모집 안내<br>
+        1. 관련: 2026년 꾸러미 사업 계획<br>
+        2. 위 호와 관련하여 참여 농가를 다음과 같이 모집합니다.<br>
+        &nbsp;&nbsp;가. 모집 기간: 11. 2.(월) ~ 11. 7.(토)<br>
+        &nbsp;&nbsp;나. 신청 방법: 매장 방문 또는 전화<br>
+        붙임  신청서 1부.  끝.</div>
+      <div class="box tip"><span class="box-title">TIP</span>미션 1에서 공문 양식을 프로젝트에 올려 두면, 매번 같은 형식으로 나옵니다.</div>
+      <a class="link-btn" href="session_4.html">다음 · 미션 1·2 업무비서 · 판매데이터 분석 →</a>
+    </section>
+
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+<div id="toast">복사되었습니다 ✓</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>initSessionPage(3);</script>
+</body>
+</html>
